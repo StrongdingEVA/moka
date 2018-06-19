@@ -1,0 +1,609 @@
+[ 2018-06-06T17:10:53+08:00 ] 127.0.0.1 /api.php/MokaNew/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+ERR: 无法加载控制器:MokaNew
+
+[ 2018-06-06T17:11:06+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 129 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 145 行.
+
+[ 2018-06-06T17:11:27+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_c96fce47f243800df36617493fdff77b.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 247 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6e95926590b119d2a68936ac0bf113cf.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 240 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 145 行.
+
+[ 2018-06-06T17:25:33+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 247 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 240 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 145 行.
+
+[ 2018-06-06T17:29:52+08:00 ] 127.0.0.1 /api.php/Moka/getCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `status` = 2 AND `uid` = 9 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `status` = 2 AND `uid` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 111 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:20:24+08:00 ] 127.0.0.1 /api.php/Moka/getCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `status` = 2 AND `uid` = 9 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `status` = 2 AND `uid` = 9 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:20:47+08:00 ] 127.0.0.1 /api.php/Moka/getCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `status` = 2 AND `uid` = 9 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `status` = 2 AND `uid` = 9 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:21:13+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:23:04+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:23:11+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:23:25+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:23:39+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 133 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 149 行.
+
+[ 2018-06-06T18:25:52+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:26:06+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:27:13+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:27:20+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:27:26+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:27:30+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:29:11+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:29:46+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:29:59+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:30:08+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:30:21+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:30:33+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 132 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 148 行.
+
+[ 2018-06-06T18:30:51+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:31:22+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:31:37+08:00 ] 127.0.0.1 /api.php/Moka/getCardList
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:35:07+08:00 ] 127.0.0.1 /api.php/Moka/myCollect
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mk_collect` WHERE `uid` = 9 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: select m.uid,m.thumb,m.nickname,m.height,m.weight,m.chestline,m.waistline,m.hipline,c.pic_json,c.id as cid,s.id_a as sid from mk_card as c left join mk_member_info as m on c.uid=m.uid left join mk_style as s on s.id=c.s_id where c.id in(248) [ RunTime:0.0020s ]
+
+[ 2018-06-06T18:36:16+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:36:44+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:37:03+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T18:37:27+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:37:44+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T18:40:46+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-06-06T18:41:18+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'points' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 210 行.
+
+[ 2018-06-06T18:41:30+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'points' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 210 行.
+
+[ 2018-06-06T18:41:41+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'points' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 210 行.
+
+[ 2018-06-06T18:41:52+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-06T18:42:22+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-06-06T18:47:32+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+
+[ 2018-06-06T18:48:05+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: UPDATE `mk_card` SET `pic_json`='[\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c67dc3d.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6bde42.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170ad.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c702f3b.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7178cc.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6da40a.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6ccb8f.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170dd.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/\\/\\/2018\\/\\/04\\/\\/5acefae95cece.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\"]' WHERE `id` = 110 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_2a09ec8ee82340af433fff020548a6aa.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F06%2F5b17bbe49550c.jpg',`qr`='https://img.guimizone.com/2018%2F06%2Fsmall.jpg' WHERE `id` = 110 [ RunTime:0.0010s ]
+NOTIC: [2] unlink(Uploads/unionPics/2018-04-05/2018040518412725976.jpg): No such file or directory D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 248 行.
+
+[ 2018-06-06T18:48:15+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined property: Api\Logic\ApiLogic::$uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 237 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\CardModel.class.php 第 43 行.
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `mk_card` (`pic_json`,`s_id`,`uid`,`create_time`) VALUES ('[\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c67dc3d.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6bde42.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170ad.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c702f3b.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7178cc.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6da40a.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6ccb8f.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170dd.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/\\/\\/2018\\/\\/04\\/\\/5acefae95cece.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\"]','3',NULL,'1528282095')
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `mk_card` (`pic_json`,`s_id`,`uid`,`create_time`) VALUES ('[\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c67dc3d.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6bde42.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170ad.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c702f3b.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7178cc.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6da40a.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6ccb8f.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170dd.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/\\/\\/2018\\/\\/04\\/\\/5acefae95cece.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\"]','3',NULL,'1528282095')
+
+[ 2018-06-06T18:49:18+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\CardModel.class.php 第 43 行.
+SQL: INSERT INTO `mk_card` (`pic_json`,`s_id`,`uid`,`create_time`) VALUES ('[\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c67dc3d.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6bde42.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170ad.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c702f3b.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7178cc.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6da40a.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6ccb8f.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170dd.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/\\/\\/2018\\/\\/04\\/\\/5acefae95cece.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\"]','3','9','1528282153') [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_90cc332c2217b82e37f4cd397a1a9a35.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 251 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: agent D:\phpStudy\WWW\moka\Application\Common\Common\function.php 第 139 行.
+NOTIC: [8] Undefined index: protocol D:\phpStudy\WWW\moka\Application\Common\Common\function.php 第 140 行.
+NOTIC: [8] Undefined index: auth D:\phpStudy\WWW\moka\Application\Common\Common\function.php 第 141 行.
+NOTIC: [8] Undefined index: useragent D:\phpStudy\WWW\moka\Application\Common\Common\function.php 第 142 行.
+NOTIC: [8] Undefined index: ip D:\phpStudy\WWW\moka\Application\Common\Common\function.php 第 143 行.
+NOTIC: [2] unlink(): Invalid argument D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 127 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F06%2F5b17bc2d4b612.jpg',`qr`='https://img.guimizone.com/2018%2F06%2F5b17bc2ced3d6.png' WHERE `id` = 251 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: oldPath D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 247 行.
+
+[ 2018-06-06T18:53:06+08:00 ] 127.0.0.1 /api.php/Moka/saveCardInfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\CardModel.class.php 第 43 行.
+SQL: INSERT INTO `mk_card` (`pic_json`,`s_id`,`uid`,`create_time`) VALUES ('[\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c67dc3d.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6bde42.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170ad.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c702f3b.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7178cc.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6da40a.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c6ccb8f.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/2018%2F04%2F5ad066c7170dd.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\",\"https:\\/\\/img.guimizone.com\\/\\/\\/\\/2018\\/\\/04\\/\\/5acefae95cece.jpg?imageView2\\/0\\/w\\/500\\/h\\/500\"]','3','9','1528282382') [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_499000c1f6bd47f7c38e4deec47bed3a.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 254 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE ( id_a=3 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+NOTIC: [8] Undefined index: h D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 268 行.
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [2] unlink(): Invalid argument D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 127 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F06%2F5b17bd118f052.jpg',`qr`='https://img.guimizone.com/2018%2F06%2F5b17bd1135e76.png' WHERE `id` = 254 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: oldPath D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 246 行.
+
+[ 2018-06-06T18:58:39+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='1201',`naughty`='1500',`pic`='Uploads/userBottom/2018-06-06/5b17be5bd0aad.jpg' WHERE `uid` = 9 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_499000c1f6bd47f7c38e4deec47bed3a.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 254 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_90cc332c2217b82e37f4cd397a1a9a35.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 251 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F06%2F5b17be5ca7a9c.jpg',`qr`='https://img.guimizone.com/2018%2F06%2F5b17bd1135e76.png' WHERE `id` = 254 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_499000c1f6bd47f7c38e4deec47bed3a.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F06%2F5b17be5e7a08c.jpg',`qr`='https://img.guimizone.com/2018%2F06%2F5b17bc2ced3d6.png' WHERE `id` = 251 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_90cc332c2217b82e37f4cd397a1a9a35.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+

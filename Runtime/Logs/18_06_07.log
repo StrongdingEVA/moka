@@ -1,0 +1,37 @@
+[ 2018-06-07T13:33:35+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: list D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php 第 276 行.
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 9  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 563 行.
+
+[ 2018-06-07T13:33:45+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-06-07T13:34:43+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 9  [ RunTime:0.0010s ]
+

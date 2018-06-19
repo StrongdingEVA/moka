@@ -1,0 +1,3 @@
+<?php
+//000000003600a:16:{s:2:"id";s:1:"4";s:4:"type";s:1:"1";s:4:"name";s:19:"六月4日的订单";s:5:"price";s:7:"1500.00";s:3:"num";s:2:"12";s:5:"level";s:1:"1";s:5:"thumb";s:55:"https://img.guimizone.com/2018%2F06%2F5b14b68d41998.png";s:8:"nickname";s:27:"卡驾驶得分快啦多少";s:8:"descript";s:76:"六月4日的订单六月4日的订单六月4日的订单六月4日的订单";s:3:"pic";s:55:"https://img.guimizone.com/2018%2F06%2F5b14b6838edb6.jpg";s:7:"naughty";s:1:"1";s:7:"contact";s:11:"15801226640";s:11:"create_time";s:10:"1528084124";s:5:"prize";s:30:"啊啊啊啊啊啊啊啊啊啊";s:11:"share_timer";s:1:"0";s:6:"status";s:1:"1";}
+?>

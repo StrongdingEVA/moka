@@ -1,0 +1,133 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            话题意见      
+        </h2>
+    </div>
+    <div class="cf">
+        <div class="search-form fl cf">
+            <div class="btn-group">   
+                <form method="get" action="{:U('Feedback/index')}" class="frmPost">
+                    <select name="status" id="sts_select">
+                        <option value="-1">全部状态</option>
+                        <option value="0" <eq name="status" value="0">selected</eq>>未读</option>
+                        <option value="1" <eq name="status" value="1">selected</eq>>已读</option>                   
+                    </select> 
+                    <select name="type" id="type_select">
+                        <option value="-1">全部类型</option>
+                        <option value="0" <eq name="type" value="0">selected</eq>>意见反馈</option>
+                        <option value="1" <eq name="type" value="1">selected</eq>>话题反馈</option>                   
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table>
+
+            <thead>
+                <tr class="nbg">                  
+                    <th>编号</th>                   
+                    <th>类型</th> 
+                    <th>联系方式</th>
+                    <th>图片</th>
+                    <th>状态</th>                    
+                    <th>创建时间</th>
+                    <th width="100">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+                <tr>                  
+                    <td>{$vo.id}</td>
+                    <td><if condition="$vo.type eq 0">意见反馈<elseif condition="$vo.type eq 1" />话题反馈</if></td> 
+                <td>{$vo.contact}</td> 
+                <td data-img="{$vo.image|thumb=###,800,600}"><if condition='!empty($vo["image"])'><img style="cursor: pointer;" class="_img_click" src="{$vo.image|thumb=###,60,60}"/></if></td>               
+                <td class="_read_sts">
+                <if condition="$vo.status eq 1">
+                    <font color="#ccc">已读</font>   
+                    <else />
+                    未读
+                </if>
+                </td>  
+                <td>{$vo.create_time|date='Y-m-d H:i',###}</td>
+                <td>
+                    <a href="javascript:;" class='_btn_show_content' data-id="{$vo.id}" data-sts="{$vo.status}">查看内容</a>&nbsp;&nbsp;    
+                    <div class='_win_show' style="display: none">
+                        <div style='padding:10px'>{$vo.content}</div>                            
+                    </div>
+                </td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+    <!-- 分页 -->   
+    <div class="page">
+        {$page}
+    </div>   
+</div>
+
+<script>
+    $(function () {
+        $("#sts_select,#type_select").on('change', function () {
+            var url = $('.frmPost').attr('action');
+            var query = $('.frmPost').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+            query = query.replace(/^&/g, '');
+            if (url.indexOf('?') > 0) {
+                url += '&' + query;
+            } else {
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+
+        $('._img_click').click(function () {
+            var obj = this;
+            layer.closeAll();
+            layer.open({
+                type: 1,
+                title: '查看图片',
+                skin: 'layui-layer-rim', //加上边框
+                offset: '100px',
+                //area: ['450px'], //宽高              
+                content: "<img src='" + $(obj).parent().attr('data-img') + "'/>"
+            });
+        });
+
+        $('._btn_show_content').click(function () {
+            var obj = this;
+            var id = $(obj).attr('data-id');
+            var td = $(obj).parents('tr').find('._read_sts');
+            layer.closeAll();
+            layer.open({
+                type: 1,
+                title: '查看内容',
+                skin: 'layui-layer-rim', //加上边框
+                area: ['450px'], //宽高              
+                content: $(obj).parent().find('._win_show').html()
+            });
+            if ($(obj).attr('data-sts') == '0') {
+                set_red(id, function (data) {
+                    if (data.status == 1) {
+                        $(td).html(' <font color="#ccc">已读</font>');
+                        $(td).attr('data-sts', 1);
+                    }
+                });
+            }
+        });
+
+    });
+    function set_red(id, callback) {
+        var url = cleara(SELF) + "&a=ajax_set_sts&id=" + id;
+        $.get(url, function (data) {
+            callback(data);
+        }, 'json');
+    }
+</script>
+</block>

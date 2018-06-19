@@ -1,0 +1,117 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>抽奖记录</h2>
+    </div>
+
+    <div class="cf">
+        <button class="btn ajax-post confirm" url="{:U('drawLogDel')}" target-form="ids">删 除</button>
+        <a class="btn" href="{:U('drawLogExport',I('get.'))}" >导 出</a>
+        
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft">
+                <input type="text" name="username" class="search-input" value="{:I('username')}" placeholder="请输入用户名">
+            </div>
+            <div class="sleft">
+                <input type="text" name="mobile" class="search-input" value="{:I('mobile')}" placeholder="请输入手机号">
+            </div>
+            <div class="sleft">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('drawLog')}"><i class="btn-search"></i></a>
+            </div>
+        </div>
+        <!-- 高级筛选 -->
+        <div class="fr cf" style="margin-right: 10px;">
+            <div class="sleft" style="background: none;">
+                &nbsp;&nbsp;状态：
+                <select class="select" name="status" id="status">
+                    <option value="-1" <eq name="status" value="-1">selected="selected"</eq>>全部</option>
+                    <option value="1" <eq name="status" value="1">selected="selected"</eq>>已中奖</option>
+                    <option value="0" <eq name="status" value="2">selected="selected"</eq>>未中奖</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+                <tr>
+                    <th class="row-selected">
+                        <input class="checkbox check-all" type="checkbox">
+                    </th>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>手机号</th>
+                    <th>奖品名称</th>
+                    <th>抽奖时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.user.username}</td>
+                        <td>{$vo.user.mobile}</td>
+                        <td>{$vo.prize.title}</td>
+                        <td>{$vo.create_time}</td>
+                        <td>
+                            <a class="confirm ajax-get" title="删除" href="{:U('drawLogDel',array('id'=>$vo['id']))}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('drawLog')}");
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            // 状态筛选
+            $(".select").on('change', function () {
+                $("#search").click();
+            });
+            //搜索功能
+            $("#search").click(function () {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                // 筛选地址配置
+                var status = $('#status').val();
+                if (status != -1) {
+                    url += '&status=' + status;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+        });
+    </script>
+</block>

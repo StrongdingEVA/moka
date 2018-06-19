@@ -1,0 +1,1023 @@
+[ 2018-05-31T10:07:07+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T10:07:43+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0020s ]
+
+[ 2018-05-31T10:07:54+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T10:08:09+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T10:08:23+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `num` desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0020s ]
+
+[ 2018-05-31T10:08:40+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T10:08:44+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `price` desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T10:19:07+08:00 ] 127.0.0.1 /api.php/Moka/setShare
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+
+[ 2018-05-31T10:19:32+08:00 ] 127.0.0.1 /api.php/Moka/setShare
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+SQL: INSERT INTO `mk_share` (`uid`,`oid`,`create_time`) VALUES ('1','1','1527733172') [ RunTime:0.0020s ]
+
+[ 2018-05-31T10:19:34+08:00 ] 127.0.0.1 /api.php/Moka/setShare
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T10:19:36+08:00 ] 127.0.0.1 /api.php/Moka/setShare
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0050s ]
+
+[ 2018-05-31T11:55:29+08:00 ] 127.0.0.1 /api.php/Moka/questions
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_article` [ RunTime:0.0040s ]
+SQL: SELECT `title`,`content` FROM `mk_article` WHERE `status` = 1 ORDER BY `listorder` asc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: list D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php 第 642 行.
+NOTIC: [8] Undefined index: total D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php 第 642 行.
+
+[ 2018-05-31T11:56:36+08:00 ] 127.0.0.1 /api.php/Moka/questions
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_article` [ RunTime:0.0050s ]
+SQL: SELECT `title`,`content` FROM `mk_article` WHERE `status` = 1 ORDER BY `listorder` asc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-05-31T14:02:16+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0020s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f8fe49fb6a.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card`  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f8fe4ef4ec.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 18 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_4867dd7e73cde2ebb0304a355d3b7b07.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_4867dd7e73cde2ebb0304a355d3b7b07.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f8fe6d6eb9.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 20 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_53779a28ad36bebedd3cb25d34b43768.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_53779a28ad36bebedd3cb25d34b43768.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f8fe7bc90c.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 24 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_19e5903f8eef933b4cc2179081fee1b2.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] imagepng() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\moka\Application\Api\Common\function.php 第 124 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\moka\Application\Api\Common\function.php 第 125 行.
+
+[ 2018-05-31T14:03:52+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f90439ab12.jpg' WHERE `uid` = 9 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card`  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9044a62e6.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 18 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_4867dd7e73cde2ebb0304a355d3b7b07.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_4867dd7e73cde2ebb0304a355d3b7b07.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f904698c7d.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 20 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_53779a28ad36bebedd3cb25d34b43768.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_53779a28ad36bebedd3cb25d34b43768.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f904800f1c.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 24 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_19e5903f8eef933b4cc2179081fee1b2.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_19e5903f8eef933b4cc2179081fee1b2.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] imagepng() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\moka\Application\Api\Common\function.php 第 124 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\moka\Application\Api\Common\function.php 第 125 行.
+
+[ 2018-05-31T14:04:58+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f908a88653.jpg' WHERE `uid` = 9 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card`  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:07:37+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f91296c18a.jpg' WHERE `uid` = 9 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card`  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:08:52+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0060s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f917490ca5.jpg' WHERE `uid` = 9 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card`  [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:09:52+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f91abada2d.jpg' WHERE `uid` = 9 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card`  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f91ac7d4eb.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 18 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_4867dd7e73cde2ebb0304a355d3b7b07.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_4867dd7e73cde2ebb0304a355d3b7b07.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f91ae8f28a.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 20 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_53779a28ad36bebedd3cb25d34b43768.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_53779a28ad36bebedd3cb25d34b43768.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f91afeb769.jpg',`qr`='Uploads/smallQr/small.jpg' WHERE `id` = 24 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_19e5903f8eef933b4cc2179081fee1b2.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_19e5903f8eef933b4cc2179081fee1b2.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] imagepng() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\moka\Application\Api\Common\function.php 第 124 行.
+NOTIC: [2] imagedestroy() expects parameter 1 to be resource, boolean given D:\phpStudy\WWW\moka\Application\Api\Common\function.php 第 125 行.
+
+[ 2018-05-31T14:10:27+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f91d306376.jpg' WHERE `uid` = 9 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_card`  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:12:26+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f924a37fa0.jpg' WHERE `uid` = 9 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+
+[ 2018-05-31T14:15:03+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 9 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f92e7caf3e.jpg' WHERE `uid` = 9 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_ce009e42c75cab9a66afc69b9bf9eaae.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 111 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="9" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:15:14+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f92f24d9c6.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:15:25+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0020s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f92fd06b73.jpg' WHERE `uid` = 1 [ RunTime:0.0040s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:16:46+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:17:30+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f93762304a.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f93770c536.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad475921e841.png' WHERE `id` = 250 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9378d6be7.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47582791e3.png' WHERE `id` = 249 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9379e047a.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47437b2444.png' WHERE `id` = 248 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:17:52+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f93907b086.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:18:24+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f93b044c9f.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:18:59+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f93d35d347.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:19:16+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f93e4c66dc.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:19:21+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='0' WHERE `uid` = 1 [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `pic`='Uploads/userBottom/2018-05-31/5b0f93e9d0c0c.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_6ed9bbb5f6d68fab334f9bd0dd4fad2e.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:20:45+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:21:04+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+
+[ 2018-05-31T14:22:34+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+
+[ 2018-05-31T14:23:34+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:23:56+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0060s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='25',`pic`='Uploads/userBottom/2018-05-31/5b0f94fceb0e4.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined property: Api\Logic\MakeImageLogic::$uid D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 26 行.
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = null AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = null AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:24:11+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:25:03+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:25:21+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='26',`pic`='Uploads/userBottom/2018-05-31/5b0f955111f7f.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined property: Api\Logic\MakeImageLogic::$uid D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 26 行.
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = null AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = null AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:25:34+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='28',`pic`='Uploads/userBottom/2018-05-31/5b0f955e4e74c.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:26:09+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='80',`pic`='Uploads/userBottom/2018-05-31/5b0f95816eede.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:26:23+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:27:26+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='81',`pic`='Uploads/userBottom/2018-05-31/5b0f95cea1cfe.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:29:16+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:29:19+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0060s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='1',`pic`='Uploads/userBottom/2018-05-31/5b0f963fda532.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:30:45+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:30:50+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+
+[ 2018-05-31T14:31:39+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0080s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0070s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='2',`pic`='Uploads/userBottom/2018-05-31/5b0f96cb36be4.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:32:28+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:32:33+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='3',`pic`='Uploads/userBottom/2018-05-31/5b0f9701be83c.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:36:33+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+
+[ 2018-05-31T14:36:36+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='5',`pic`='Uploads/userBottom/2018-05-31/5b0f97f467922.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:37:12+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='4',`pic`='Uploads/userBottom/2018-05-31/5b0f98181cdfc.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:37:42+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='1',`pic`='Uploads/userBottom/2018-05-31/5b0f98363b917.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:38:17+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='12',`pic`='Uploads/userBottom/2018-05-31/5b0f9859a8f33.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:38:48+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='121',`pic`='Uploads/userBottom/2018-05-31/5b0f98782fcb3.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:40:47+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='12',`pic`='Uploads/userBottom/2018-05-31/5b0f98eeb3937.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:40:59+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='121',`pic`='Uploads/userBottom/2018-05-31/5b0f98fb7e0b2.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-31T14:41:56+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='120',`pic`='Uploads/userBottom/2018-05-31/5b0f99301ed4c.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f993105b27.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad475921e841.png' WHERE `id` = 250 [ RunTime:0.0040s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9932eee0f.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47582791e3.png' WHERE `id` = 249 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f99342962b.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47437b2444.png' WHERE `id` = 248 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:45:25+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='1201',`pic`='Uploads/userBottom/2018-05-31/5b0f9a053fd62.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T14:46:07+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='120',`pic`='Uploads/userBottom/2018-05-31/5b0f9a29b9af2.jpg' WHERE `uid` = 1 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9a2a80cf6.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad475921e841.png' WHERE `id` = 250 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9a2db037c.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47582791e3.png' WHERE `id` = 249 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9a2f4be5f.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47437b2444.png' WHERE `id` = 248 [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:47:23+08:00 ] 127.0.0.1 /api.php/MokaNew/saveUinfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `gentle`='1',`height`='0',`weight`='0',`chestline`='0',`waistline`='0',`hipline`='1201',`pic`='Uploads/userBottom/2018-05-31/5b0f9a780234d.jpg' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( uid="1" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9a787b102.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad475921e841.png' WHERE `id` = 250 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9a798b6f7.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47582791e3.png' WHERE `id` = 249 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: UPDATE `mk_card` SET `union_img`='https://img.guimizone.com/2018%2F05%2F5b0f9a7a999c3.jpg',`qr`='https://img.guimizone.com/2018%2F04%2F5ad47437b2444.png' WHERE `id` = 248 [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-31T14:54:18+08:00 ] 127.0.0.1 /api.php/MokaNew/getCardList
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+ERR: Think\Model:getListRows方法不存在！
+
+[ 2018-05-31T14:54:54+08:00 ] 127.0.0.1 /api.php/MokaNew/getCardList
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_d0f25287fd7f1c73bdb3182a9b724604.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_768c7f1828f0d718c0bb46d22ca5a556.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+NOTIC: [2] Illegal string offset 'c' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 145 行.
+
+[ 2018-05-31T15:02:38+08:00 ] 127.0.0.1 /api.php/MokaNew/getCardInfo
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `status` = 2 AND `uid` = 1 ORDER BY `id` desc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `status` = 2 AND `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T15:15:00+08:00 ] 127.0.0.1 /api.php/MokaNew/delCard
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: UPDATE `mk_card` SET `status`='1' WHERE `id` = 250 [ RunTime:0.0020s ]
+
+[ 2018-05-31T16:01:03+08:00 ] 127.0.0.1 /api.php/MokaNew/getModelEnable
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T16:02:39+08:00 ] 127.0.0.1 /api.php/MokaNew/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+
+[ 2018-05-31T16:04:28+08:00 ] 127.0.0.1 /api.php/MokaNew/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_collect` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T16:06:35+08:00 ] 127.0.0.1 /api.php/Moka/collectMoka
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+
+[ 2018-05-31T16:07:18+08:00 ] 127.0.0.1 /api.php/Moka/giveMeFive
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_cdff6f76036950f3d78f66d1525a887f.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `mk_card` SET `great`='[]',`great_num`='0' WHERE `id` = 250 [ RunTime:0.0030s ]
+
+[ 2018-05-31T16:08:18+08:00 ] 127.0.0.1 /api.php/Moka/setClicks
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_member_info` WHERE `uid` = 9 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 473 行.
+SQL: UPDATE `mk_member_info` SET `clicks`='3' WHERE `uid` = 9 [ RunTime:0.0020s ]
+
+[ 2018-05-31T16:09:14+08:00 ] 127.0.0.1 /api.php/Moka/myCollect
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: select m.uid,m.thumb,m.nickname,m.height,m.weight,m.chestline,m.waistline,m.hipline,c.pic_json,c.id as cid from mk_card as c left join mk_member_info as m on c.uid=m.uid where c.id in(250) [ RunTime:0.0020s ]
+
+[ 2018-05-31T16:10:17+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0080s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `price` desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+
+[ 2018-05-31T16:11:08+08:00 ] 127.0.0.1 /api.php/Moka/setShare
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0050s ]
+
+[ 2018-05-31T16:12:15+08:00 ] 127.0.0.1 /api.php/Moka/questions
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_article` [ RunTime:0.0040s ]
+SQL: SELECT `title`,`content` FROM `mk_article` WHERE `status` = 1 ORDER BY `listorder` asc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-31T16:40:46+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0050s ]
+

@@ -1,0 +1,144 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>帮助列表</h2>
+    </div>
+
+    <div class="cf">
+        <a class="btn" href="{:U('helpAdd')}">新 增</a>
+        <button class="btn ajax-post confirm" url="{:U('helpDel')}" target-form="ids">删 除</button>
+
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft">
+                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入标题">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('help')}"><i class="btn-search"></i></a>
+            </div>
+        </div>
+        <!-- 高级筛选 -->
+        <div class="fr cf" style="margin-right: 10px;">
+            <div class="sleft" style="background: none;">
+                &nbsp;&nbsp;状态：
+                <select name="status" id="status">
+                    <option value="-1" <eq name="status" value="-1">selected="selected"</eq>>全部</option>
+                    <option value="1" <eq name="status" value="1">selected="selected"</eq>>启用</option>
+                    <option value="0" <eq name="status" value="0">selected="selected"</eq>>禁用</option>
+                </select>
+                &nbsp;&nbsp;分类：
+                <select name="cat" id="cat">
+                    <option value="-1" <eq name="cat" value="-1">selected="selected"</eq>>全部</option>
+                    <volist name="catlist" id="vo">
+                        <option value="{$vo.id}" <eq name="cat" value="$vo['id']">selected="selected"</eq>>{$vo.title}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+                <tr>
+                    <th class="row-selected">
+                        <input class="checkbox check-all" type="checkbox">
+                    </th>
+                    <th>ID</th>
+                    <th style="width: 15%;">标题</th>
+                    <th style="width: 10%">分类</th>
+                    <th>排序</th>
+                    <th>发布时间</th>
+                    <th>更新时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.title}</td>
+                        <td>{$vo.cat_name}</td>
+                        <td>{$vo.sort}</td>
+                        <td>{$vo.create_time}</td>
+                        <td>{$vo.update_time}</td>
+                        <td>
+                            <a title="编辑" href="{:U('helpEdit',array('id'=>$vo['id']))}">编辑</a>
+                            <a href="{:U('changeField',array('id'=>$vo['id'],'value'=>abs($vo['status']-1)))}" class="ajax-get"><eq name="vo.status" value="1">禁用<else/>启用</eq></a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('helpDel',array('id'=>$vo['id']))}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function () {
+            // 筛选
+            $("#status,#cat").on('change', function () {
+                $("#search").click();
+            });
+            //搜索功能
+            $("#search").click(function () {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                // 筛选配置
+                var status = $('#status').val();
+                if (status != -1) {
+                    url += '&status=' + status;
+                }
+                var cat = $('#cat').val();
+                if (cat != -1) {
+                    url += '&cat=' + cat;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //点击排序
+            $('.list_sort').click(function () {
+                var url = $(this).attr('url');
+                var ids = $('.ids:checked');
+                var param = '';
+                if (ids.length > 0) {
+                    var str = new Array();
+                    ids.each(function () {
+                        str.push($(this).val());
+                    });
+                    param = str.join(',');
+                }
+
+                if (url != undefined && url != '') {
+                    window.location.href = url + '/ids/' + param;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

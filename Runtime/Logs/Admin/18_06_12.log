@@ -1,0 +1,47 @@
+[ 2018-06-12T14:54:59+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&status=-1&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nickname' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `mk_unfied_order` WHERE `nickname` LIKE '\'%MMZJYYN%\'' LIMIT 1  
+ERR: 1054:Unknown column 'nickname' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `mk_unfied_order` WHERE `nickname` LIKE '\'%MMZJYYN%\'' LIMIT 1  
+
+[ 2018-06-12T15:05:03+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 表达式错误:like','%MMZJYYN%'
+
+[ 2018-06-12T15:07:22+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE ( `nicknames` = null  ) 
+
+[ 2018-06-12T15:07:23+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE ( `nicknames` = null  ) 
+
+[ 2018-06-12T15:08:51+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE `nicknames` LIKE '\'%MMZJYYN%\'' 
+
+[ 2018-06-12T15:09:38+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE `nicknames` LIKE '%MMZJYYN%' 
+
+[ 2018-06-12T15:09:39+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE `nicknames` LIKE '%MMZJYYN%' 
+
+[ 2018-06-12T15:10:12+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE `nicknames` LIKE '\'%MMZJYYN%\'' 
+
+[ 2018-06-12T15:10:13+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE `nicknames` LIKE '\'%MMZJYYN%\'' 
+
+[ 2018-06-12T15:10:13+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/reward&nickname=MMZJYYN
+ERR: 1054:Unknown column 'nicknames' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE `nicknames` LIKE '\'%MMZJYYN%\'' 
+
+[ 2018-06-12T15:17:58+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/del
+ERR: 非法操作:del
+
+[ 2018-06-12T15:18:12+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/del
+ERR: 非法操作:del
+

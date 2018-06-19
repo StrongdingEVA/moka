@@ -1,0 +1,167 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}订单</h2>
+    </div>
+    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">订单类型<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="type" id="orderType">
+                    <option value="1">试用拍照</option>
+                    <option value="2">主图拍照</option>
+                    <option value="3">详情拍摄</option>
+                    <option value="4">详情拍摄</option>
+                    <option value="5">其他</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">名称<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">价格<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="price" value="{$info.price}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">描述<span class="check-tips"></span></label>
+            <div class="controls">
+                <textarea name="descript" id="descript" cols="60" rows="20">{$info.descript}</textarea>
+            </div>
+        </div>
+
+        <div class="form-item cf">
+            <label class="item-label">产品图片<span class="check-tips"></span></label>
+            <input type="hidden" name="pic" id="pic" value="{$info.pic}">
+            <if condition="info.pic">
+                <img class="modelspic" src="{$info.pic}" alt="">
+            </if>
+            <div class="controls" id="fileuploader_pic" style="width: 100%;">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">模特人数<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="num" value="{$info.num}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">账号等级<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item cf">
+            <label class="item-label">头像<span class="check-tips"></span></label>
+            <input type="hidden" name="thumb" id="thumb" value="{$info.thumb}">
+            <if condition="info.thumb">
+                <img class="modelspic" src="{$info.thumb}" alt="">
+            </if>
+            <div class="controls" id="fileuploader" style="width: 100%;">
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">昵称<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="nickname" value="{$info.nickname}">
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">淘气值<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="naughty" id="naughty">
+                    <option value="1">1000以下</option>
+                    <option value="2">1000-1500</option>
+                    <option value="3">1500以上</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">联系方式<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="contact" value="{$info.contact}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">奖品<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="prize" value="{$info.prize}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="status" value="1" <neq name="info.status" value="0">checked="checked"</neq>>启用
+                <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq>>禁用
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__JS__/jquery.uploadfile.min.js"></script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('order')}");
+
+        $(function(){
+            $("#fileuploader").uploadFile({
+                url:"Admin/File/upload",
+                dragDropStr:'点击选择图片',
+                uploadStr:'点击选择图片',
+                allowedTypes:'jpg,png,jpeg,gif',
+                extErrorStr:'只能上传以下格式的文件:',
+                fileName:"myfile",
+                onSuccess:function(files, response, xhr, pd){
+                    if(parseInt(response.status) == 1){ //上传成功
+                        var file = response.data[0];
+                        $('#thumb').val(file);
+                        $('.modelspic').remove();
+                        $('#fileuploader').before('<img class="modelspic" src="'+ file +'" />');
+                    }else{
+                        alert('图片上传失败');
+                    }
+                }
+            });
+
+            $("#fileuploader_pic").uploadFile({
+                url:"Admin/File/upload",
+                dragDropStr:'点击选择图片',
+                uploadStr:'点击选择图片',
+                allowedTypes:'jpg,png,jpeg,gif',
+                extErrorStr:'只能上传以下格式的文件:',
+                fileName:"myfile",
+                onSuccess:function(files, response, xhr, pd){
+                    if(parseInt(response.status) == 1){ //上传成功
+                        var file = response.data[0];
+                        $('#pic').val(file);
+                        $('.modelspic').remove();
+                        $('#fileuploader_pic').before('<img class="modelspic" src="'+ file +'" />');
+                    }else{
+                        alert('图片上传失败');
+                    }
+                }
+            });
+        })
+    </script>
+</block>

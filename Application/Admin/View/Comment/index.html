@@ -1,0 +1,146 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>文章列表</h2>
+    </div>
+
+    <div class="cf">       
+        <button class="btn ajax-post confirm" url="{:U('del')}" target-form="ids">删 除</button>
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft">
+                <select name="sts_select" id="sts_select">
+                    <option value="">请选择状态</option>
+                    <option value="1" <eq name="status" value="1">selected</eq>>显示</option>
+                    <option value="2" <eq name="status" value="2">selected</eq>>隐藏</option>
+                </select>
+                <select name="type_select" id="type_select">
+                    <option value="">请选择模块</option>
+                    <option value="1" <eq name="type" value="1">selected</eq>>小程序</option>
+                    <option value="2" <eq name="type" value="2">selected</eq>>文章</option>
+                    <option value="3" <eq name="type" value="3">selected</eq>>评测</option>
+                </select>
+            </div>           
+            <div class="sleft">
+                <input type="hidden" name="status" id="status" value="{$status}">     
+                <input type="hidden" name="type" id="type" value="{$type}"> 
+                <input type="text" name="content" class="search-input" value="{:I('content')}" placeholder="请输入查找内容或用户昵称">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('index')}"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+                <tr>
+                    <th class="row-selected">
+                        <input class="checkbox check-all" type="checkbox">
+                    </th>
+                    <th style="width:80px">ID</th>
+                    <th style="width:100px">用户</th>    
+                    <th style="width: 100px">模块</th>    
+                    <th>内容</th>                   
+                    <th style="width:120px;">评论时间</th>
+                    <th style="width:100px;">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.user.nickname}</td>
+                        <td>
+                    <if condition="$vo.type eq 1">
+                        小程序
+                        <elseif condition="$vo.type eq 2" />
+                        文章
+                        <elseif condition="$vo.type eq 3" />
+                        评测
+                    </if>
+                    </td>
+                    <td>{$vo.content}</td>                       
+                    <td>{$vo.create_time}</td>
+                    <td>                        
+                    <if condition="$vo.status eq 1">
+                        <a href="{:U('changeStatus',array('id'=>$vo['id'],'sts'=>2))}" class="ajax-get">隐藏</a>&nbsp;
+                        <else/>
+                        <a href="{:U('changeStatus',array('id'=>$vo['id'],'sts'=>1))}" class="ajax-get">显示</a>&nbsp;
+                    </if>
+                    <a class="confirm ajax-get" title="删除" href="{:U('del',array('id'=>$vo['id']))}">删除</a>
+                    </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function () {
+            //筛选
+            $("#sts_select").on('change', function () {
+                var status = $("#sts_select").val();
+                $('#status').val(status);
+                $("#search").click();
+            });
+            $("#type_select").on('change', function () {
+                var type = $("#type_select").val();
+                $('#type').val(type);
+                $("#search").click();
+            });
+            //搜索功能
+            $("#search").click(function () {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //点击排序
+            $('.list_sort').click(function () {
+                var url = $(this).attr('url');
+                var ids = $('.ids:checked');
+                var param = '';
+                if (ids.length > 0) {
+                    var str = new Array();
+                    ids.each(function () {
+                        str.push($(this).val());
+                    });
+                    param = str.join(',');
+                }
+
+                if (url != undefined && url != '') {
+                    window.location.href = url + '/ids/' + param;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

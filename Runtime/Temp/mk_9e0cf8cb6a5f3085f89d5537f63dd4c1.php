@@ -1,0 +1,3 @@
+<?php
+//000000003600a:20:{s:3:"uid";s:1:"1";s:6:"openid";s:36:"6880397C-6913-0E98-CEBC-B9EDB2C2C82C";s:6:"gentle";s:1:"1";s:7:"country";s:6:"中国";s:8:"province";s:6:"福建";s:4:"city";s:6:"深圳";s:4:"area";s:0:"";s:6:"height";s:3:"173";s:6:"weight";s:2:"81";s:9:"chestline";s:2:"81";s:9:"waistline";s:2:"81";s:7:"hipline";s:2:"81";s:11:"create_time";s:10:"1522908412";s:8:"nickname";s:5:"admin";s:5:"thumb";s:0:"";s:6:"mobile";s:0:"";s:5:"level";s:1:"5";s:7:"naughty";s:4:"1584";s:3:"pic";s:47:"Uploads/userBottom/2018-04-10/5acc5cdde875d.jpg";s:6:"wechat";s:0:"";}
+?>

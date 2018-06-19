@@ -1,0 +1,365 @@
+[ 2018-06-05T14:26:33+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('76BE62A3-AD19-082D-BA93-066C4909687D','E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_reward` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 1 AND `status` = 1 
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 1 AND `status` = 1 
+
+[ 2018-06-05T14:27:59+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('76BE62A3-AD19-082D-BA93-066C4909687D','E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_reward` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 9  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 10  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 1 AND `rewarder` = 10 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 370 行.
+
+[ 2018-06-05T14:59:50+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+SQL: SELECT `type_uid` FROM `mk_sync_login` WHERE `uid` = 1 AND `type` = 'wxxcx' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_e4e34156431a2c9a08527329100a9da9.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-06-05T15:03:07+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0040s ]
+SQL: SELECT `type_uid` FROM `mk_sync_login` WHERE `uid` = 10 AND `type` = 'wxxcx' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\moka\Application\Api\Logic\PayLogic.class.php 第 294 行.
+
+[ 2018-06-05T15:03:23+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\moka\Application\Api\Logic\PayLogic.class.php 第 294 行.
+
+[ 2018-06-05T15:34:04+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\moka\Application\Api\Logic\PayLogic.class.php 第 292 行.
+
+[ 2018-06-05T17:25:51+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+
+[ 2018-06-05T17:26:40+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+
+[ 2018-06-05T17:27:25+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+
+[ 2018-06-05T17:28:02+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2018-06-05T17:29:11+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_unfied_order` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\UnfiedOrderModel.class.php 第 86 行.
+SQL: INSERT INTO `mk_unfied_order` (`order_no`,`uid`,`rewarder`,`amount`,`wx_no`,`create_time`) VALUES ('20180605172910665686','10','10','0.01','wx05172730110077981fa1a9c41623230077','1528190950') [ RunTime:0.0020s ]
+
+[ 2018-06-05T17:38:56+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('76BE62A3-AD19-082D-BA93-066C4909687D','E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C','EA8E2961-F85E-1D64-12AD-99A37CC03B14')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mk_reward` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_collect` WHERE `uid` = 10 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 11 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 370 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 370 行.
+
+[ 2018-06-05T17:42:28+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('76BE62A3-AD19-082D-BA93-066C4909687D','E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C','EA8E2961-F85E-1D64-12AD-99A37CC03B14')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_reward` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 11 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 370 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 370 行.
+
+[ 2018-06-05T17:42:38+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('76BE62A3-AD19-082D-BA93-066C4909687D','E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C','EA8E2961-F85E-1D64-12AD-99A37CC03B14')  [ RunTime:0.0020s ]
+
+[ 2018-06-05T17:43:43+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0130s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('76BE62A3-AD19-082D-BA93-066C4909687D','E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C','EA8E2961-F85E-1D64-12AD-99A37CC03B14')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `mk_reward` [ RunTime:0.0030s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 11 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+
+[ 2018-06-05T17:45:33+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('76BE62A3-AD19-082D-BA93-066C4909687D','E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C','EA8E2961-F85E-1D64-12AD-99A37CC03B14')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_reward` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 10 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 11 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 333 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 339 行.
+SQL: SELECT `id` FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_reward` WHERE `uid` = 10 AND `rewarder` = 11 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 343 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 344 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 370 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 370 行.
+
+[ 2018-06-05T17:52:50+08:00 ] 127.0.0.1 /api.php/Moka/unfileOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_sync_login` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_unfied_order` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\UnfiedOrderModel.class.php 第 86 行.
+SQL: INSERT INTO `mk_unfied_order` (`order_no`,`uid`,`rewarder`,`amount`,`wx_no`,`create_time`) VALUES ('20180605175250617593','10','10','0.01','wx051751095073435e68de02e33387974995','1528192370') [ RunTime:0.0020s ]
+
+[ 2018-06-05T18:40:32+08:00 ] 127.0.0.1 /api.php/Moka/test
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_unfied_order` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mk_unfied_order` WHERE ( id="11" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: insert into mk_unfied_order_log (`res`,`create_time`) values ('{"return_code":"FAIL","return_msg":"transaction_id\u53c2\u6570\u957f\u5ea6\u6709\u8bef"}',1528195232) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: out_trade_no D:\phpStudy\WWW\moka\Application\Api\Logic\PayLogic.class.php 第 109 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\UnfiedOrderModel.class.php 第 86 行.
+SQL: UPDATE `mk_unfied_order` SET `status`='2',`create_time`='1528195232' WHERE `order_no` = null [ RunTime:0.0010s ]
+
+[ 2018-06-05T18:40:50+08:00 ] 127.0.0.1 /api.php/Moka/test
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_unfied_order` [ RunTime:0.0060s ]
+
+[ 2018-06-05T18:41:26+08:00 ] 127.0.0.1 /api.php/Moka/test
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_unfied_order` [ RunTime:0.0060s ]
+
+[ 2018-06-05T18:42:04+08:00 ] 127.0.0.1 /api.php/Moka/test
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_unfied_order` [ RunTime:0.0060s ]
+SQL: insert into mk_unfied_order_log (`res`,`create_time`) values ('{"return_code":"FAIL","return_msg":"transaction_id\u53c2\u6570\u957f\u5ea6\u6709\u8bef"}',1528195324) [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: out_trade_no D:\phpStudy\WWW\moka\Application\Api\Logic\PayLogic.class.php 第 109 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\UnfiedOrderModel.class.php 第 86 行.
+SQL: UPDATE `mk_unfied_order` SET `status`='2',`create_time`='1528195324' WHERE `order_no` = null [ RunTime:0.0010s ]
+
+[ 2018-06-05T18:45:41+08:00 ] 127.0.0.1 /api.php/Moka/test
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_unfied_order` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: transaction_id D:\phpStudy\WWW\moka\Application\Api\Logic\PayLogic.class.php 第 145 行.
+SQL: insert into mk_unfied_order_log (`res`,`create_time`) values ('{"return_code":"SUCCESS","return_msg":"OK","appid":"wxd66cfe40e5128ff3","mch_id":"1500726811","nonce_str":"lYFWq0U9r0OuB9KL","sign":"EA6D26DF161A43389DCF8D8E773B2FF8","result_code":"SUCCESS","openid":"ow2eo5dxWWkf_NIItVSUPcF-KUlU","is_subscribe":"N","trade_type":"JSAPI","bank_type":"CFT","total_fee":"1","fee_type":"CNY","transaction_id":"4200000138201806058837013749","out_trade_no":"20180605183658613097","attach":[],"time_end":"20180605183713","trade_state":"SUCCESS","cash_fee":"1","trade_state_desc":"\u652f\u4ed8\u6210\u529f"}',1528195541) [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\UnfiedOrderModel.class.php 第 86 行.
+SQL: UPDATE `mk_unfied_order` SET `status`='1',`create_time`='1528195540' WHERE `order_no` = '20180605183658613097' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\UnfiedOrderModel.class.php 第 97 行.
+NOTIC: [2] unlink(./Runtime/Temp/mk_f677ffcd45adc04fca1d9abce89b6972.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `mk_reward` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Common\Model\RewardModel.class.php 第 37 行.
+SQL: INSERT INTO `mk_reward` (`uid`,`rewarder`,`create_time`) VALUES ('10','9','1528195541') [ RunTime:0.0010s ]
+

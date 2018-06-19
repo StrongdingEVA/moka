@@ -1,0 +1,89 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}SEO规则</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">标题<span class="check-tips">（用于后台显示的标题）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="status" value="1" <neq name="info.status" value="0">checked="checked"</neq>>启用 &nbsp; &nbsp; <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq>>禁用
+            </div>
+        </div> 
+        <div class="form-item">
+            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="sort" value="{$info.sort|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">模块<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="mod" value="{$info.mod|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">控制器<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="ctrl" value="{$info.ctrl|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">方法<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="act" value="{$info.act|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">SEO标题<span class="check-tips">（SEO标题）</span></label>
+            <div class="controls">
+                <label class="textarea input-large">
+                    <textarea name="seo_title">{$info.seo_title|default=''}</textarea>
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">SEO关键词<span class="check-tips">（SEO关键词）</span></label>
+            <div class="controls">
+                <label class="textarea input-large">
+                    <textarea name="seo_keywords">{$info.seo_keywords|default=''}</textarea>
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">SEO描述<span class="check-tips">（SEO描述）</span></label>
+            <div class="controls">
+                <label class="textarea input-large">
+                    <textarea name="seo_description">{$info.seo_description|default=''}</textarea>
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">SEO变量描述<span class="check-tips">（SEO变量描述）</span></label>
+            <div class="controls">
+                <label class="textarea input-large">
+                    <textarea name="summary">{$info.summary|default=''}</textarea>
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav('{:U('Seo/index')}');
+    </script>
+</block>

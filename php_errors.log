@@ -1,0 +1,40 @@
+[09-Apr-2018 14:05:50 PRC] PHP Fatal error:  Cannot access protected property Qcloud\Cos\Exception\ServiceResponseException::$response in D:\phpStudy\WWW\moka\ThinkPHP\Library\Vendor\TencentClound\sample.php on line 15
+[09-Apr-2018 14:05:56 PRC] PHP Fatal error:  Cannot access protected property Qcloud\Cos\Exception\ServiceResponseException::$response in D:\phpStudy\WWW\moka\ThinkPHP\Library\Vendor\TencentClound\sample.php on line 15
+[09-Apr-2018 15:06:50 PRC] PHP Fatal error:  Cannot access protected property Guzzle\Service\Resource\Model::$data in D:\phpStudy\WWW\moka\ThinkPHP\Library\Vendor\TencentClound\TencentClound.php on line 40
+[09-Apr-2018 15:07:52 PRC] PHP Fatal error:  Cannot access protected property Guzzle\Service\Resource\Model::$data in D:\phpStudy\WWW\moka\ThinkPHP\Library\Vendor\TencentClound\TencentClound.php on line 40
+[09-Apr-2018 15:10:54 PRC] PHP Fatal error:  Call to undefined method Guzzle\Service\Resource\Model::__get() in D:\phpStudy\WWW\moka\ThinkPHP\Library\Vendor\TencentClound\TencentClound.php on line 40
+[09-Apr-2018 15:44:29 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in D:\phpStudy\WWW\moka\ThinkPHP\Library\Vendor\TencentClound\TencentClound.php on line 41
+[13-Apr-2018 14:00:51 PRC] PHP Fatal error:  Call to undefined function getImgHandleInfo() in D:\phpStudy\WWW\moka\Application\Admin\Common\function.php on line 519
+[13-Apr-2018 14:03:34 PRC] PHP Fatal error:  Call to undefined function getImgHandleInfo() in D:\phpStudy\WWW\moka\Application\Admin\Common\function.php on line 519
+[13-Apr-2018 14:05:34 PRC] PHP Fatal error:  Call to undefined function getImgHandleInfo() in D:\phpStudy\WWW\moka\Application\Admin\Common\function.php on line 519
+[13-Apr-2018 14:06:32 PRC] PHP Fatal error:  Call to undefined function Admin\Controller\tarImg() in D:\phpStudy\WWW\moka\Application\Admin\Controller\FileController.class.php on line 28
+[13-Apr-2018 14:08:36 PRC] PHP Fatal error:  Call to undefined function Admin\Controller\tarImg() in D:\phpStudy\WWW\moka\Application\Admin\Controller\FileController.class.php on line 29
+[16-Apr-2018 09:08:10 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[16-Apr-2018 09:08:12 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[07-May-2018 09:05:49 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[07-May-2018 09:05:53 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[14-May-2018 10:52:02 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[14-May-2018 10:52:06 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[21-May-2018 16:14:48 PRC] PHP Fatal error:  Class 'Api\Logic\MokaLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 19
+[21-May-2018 16:15:57 PRC] PHP Fatal error:  Class 'Api\Logic\MokaLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 19
+[21-May-2018 16:17:02 PRC] PHP Fatal error:  Class 'Api\Logic\MokaLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 19
+[21-May-2018 16:18:33 PRC] PHP Fatal error:  Class 'Api\Logic\MokaLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 19
+[21-May-2018 16:21:17 PRC] PHP Fatal error:  Class 'Api\Logic\MokaLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 19
+[21-May-2018 16:21:55 PRC] PHP Fatal error:  Class 'Api\Logic\MokaLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 17
+[21-May-2018 16:22:51 PRC] PHP Fatal error:  Class 'Api\Logic\MokaLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 17
+[21-May-2018 16:23:58 PRC] PHP Fatal error:  Class 'Api\Logic\ApiLogic' not found in D:\phpStudy\WWW\moka\Application\Api\Controller\MokaController.class.php on line 17
+[28-May-2018 09:49:55 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[28-May-2018 09:49:59 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[30-May-2018 18:05:54 PRC] PHP Fatal error:  Call to undefined function Admin\Controller\getImgParm() in D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php on line 116
+[31-May-2018 09:52:48 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[31-May-2018 10:19:07 PRC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php on line 321
+[31-May-2018 11:16:48 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[31-May-2018 18:28:37 PRC] PHP Fatal error:  Class 'Think\Upload\Driver\Tencentcloud' not found in D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Upload.class.php on line 271
+[31-May-2018 18:31:54 PRC] PHP Fatal error:  Class 'Think\Upload\Driver\Tencentcloud' not found in D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Upload.class.php on line 271
+[04-Jun-2018 09:12:16 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[04-Jun-2018 09:12:20 PRC] PHP Notice:  Undefined index: HTTP_USER_AGENT in D:\phpStudy\WWW\moka\index.php on line 6
+[04-Jun-2018 09:48:38 PRC] PHP Fatal error:  Cannot unset string offsets in D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php on line 343
+[04-Jun-2018 10:09:08 PRC] PHP Fatal error:  Class 'Think\Upload\Driver\Tencentcloud' not found in D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Upload.class.php on line 271
+[04-Jun-2018 10:09:13 PRC] PHP Fatal error:  Class 'Think\Upload\Driver\Tencentcloud' not found in D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Upload.class.php on line 271
+[13-Jun-2018 13:52:37 PRC] PHP Parse error:  syntax error, unexpected ''SHOW_PAGE_TRACE'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\phpStudy\WWW\moka\Application\Api\Conf\config.php on line 18
+[13-Jun-2018 14:50:27 PRC] PHP Fatal error:  Call to undefined function Think\C() in D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Think.class.php on line 368

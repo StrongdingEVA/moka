@@ -1,0 +1,152 @@
+[ 2018-06-04T11:35:40+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0080s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0070s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','76BE62A3-AD19-082D-BA93-066C4909687D','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 330 行.
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = null AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 332 行.
+SQL: SELECT * FROM `mk_collect` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 338 行.
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 340 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 341 行.
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 330 行.
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 3 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 332 行.
+NOTIC: [2] Illegal string offset 'great' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 334 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 338 行.
+NOTIC: [2] Illegal string offset 'collect' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 338 行.
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 340 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 341 行.
+
+[ 2018-06-04T11:36:42+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0090s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','76BE62A3-AD19-082D-BA93-066C4909687D','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 332 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 338 行.
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 340 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 341 行.
+
+[ 2018-06-04T11:49:23+08:00 ] 127.0.0.1 /api.php/Moka/getOrder
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_order` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `mk_order` WHERE `status` = 1 ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_order` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_order` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_share` WHERE `uid` = 1  [ RunTime:0.0010s ]
+
+[ 2018-06-04T11:53:42+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','76BE62A3-AD19-082D-BA93-066C4909687D','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+
+[ 2018-06-04T11:54:27+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','76BE62A3-AD19-082D-BA93-066C4909687D','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 332 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 338 行.
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 340 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 341 行.
+
+[ 2018-06-04T11:57:58+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `is_show` = 1 ORDER BY `clicks` desc,`uid` asc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` WHERE `is_show` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`nickname`,`wechat`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','76BE62A3-AD19-082D-BA93-066C4909687D','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 140 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 10 AND `status` = 2 ORDER BY `id` asc LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: great D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 332 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 338 行.
+NOTIC: [8] Undefined index: s_id D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 340 行.
+NOTIC: [8] Undefined index: pics D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 39 行.
+NOTIC: [8] Undefined index: ext_info D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 41 行.
+NOTIC: [8] Undefined index: id_a D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 341 行.
+
+[ 2018-06-04T11:58:47+08:00 ] 127.0.0.1 /api.php/Moka/myCollect
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: select m.uid,m.thumb,m.nickname,m.height,m.weight,m.chestline,m.waistline,m.hipline,c.pic_json,c.id as cid,s.id_a as sid from mk_card as c left join mk_member_info as m on c.uid=m.uid left join mk_style as s on s.id=c.s_id where c.id in(250) [ RunTime:0.0010s ]
+
+[ 2018-06-04T12:02:23+08:00 ] 127.0.0.1 /api.php/Moka/myCollect
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 104 行.
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+NOTIC: [8] Constant MOKA_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 13 行.
+NOTIC: [8] Constant MOKA_BOTTOM_HEIGHT already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 14 行.
+NOTIC: [8] Constant MOKA_QR_WIDTH already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 15 行.
+NOTIC: [8] Constant MOKA_FONT_SIZE already defined D:\phpStudy\WWW\moka\Application\Api\Logic\MakeImageLogic.class.php 第 16 行.
+SQL: select m.uid,m.thumb,m.nickname,m.height,m.weight,m.chestline,m.waistline,m.hipline,c.pic_json,c.id as cid,s.id_a as sid from mk_card as c left join mk_member_info as m on c.uid=m.uid left join mk_style as s on s.id=c.s_id where c.id in(250) [ RunTime:0.0020s ]
+

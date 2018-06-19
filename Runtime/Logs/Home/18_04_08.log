@@ -1,0 +1,54 @@
+[ 2018-04-08T09:43:48+08:00 ] 127.0.0.1 /index.php
+ERR: 无法加载控制器:Index
+
+[ 2018-04-08T15:18:02+08:00 ] 127.0.0.1 /index.php
+ERR: 无法加载控制器:Index
+
+[ 2018-04-08T15:37:45+08:00 ] 127.0.0.1 /Pubic/static/pekeUpload.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:38:08+08:00 ] 127.0.0.1 /Pubic/static/pekeUpload.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:38:37+08:00 ] 127.0.0.1 /Pubic/static/pekeUpload.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:39:08+08:00 ] 127.0.0.1 /Pubic/Admin/js/pekeUpload.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:39:15+08:00 ] 127.0.0.1 /Pubic/Admin/js/pekeUpload.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:39:20+08:00 ] 127.0.0.1 /Pubic/Admin/js/pekeUpload.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:39:46+08:00 ] 127.0.0.1 /Pubic/Admin/js/pekeUpload.min.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:39:50+08:00 ] 127.0.0.1 /Pubic/Admin/js/pekeUpload.min.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:40:23+08:00 ] 127.0.0.1 /Pubic/Admin/js/pekeUpload.min.js
+ERR: 无法加载控制器:Pubic
+
+[ 2018-04-08T15:48:54+08:00 ] 127.0.0.1 /Public/Admin/js/jquery.uploadfile.min.js
+ERR: 无法加载控制器:Public
+
+[ 2018-04-08T15:48:55+08:00 ] 127.0.0.1 /Public/Admin/js/jquery.uploadfile.min.js
+ERR: 无法加载控制器:Public
+
+[ 2018-04-08T15:48:55+08:00 ] 127.0.0.1 /Public/Admin/js/jquery.uploadfile.min.js
+ERR: 无法加载控制器:Public
+
+[ 2018-04-08T15:50:34+08:00 ] 127.0.0.1 /File/upload
+ERR: 无法加载控制器:File
+
+[ 2018-04-08T15:50:34+08:00 ] 127.0.0.1 /File/upload
+ERR: 无法加载控制器:File
+
+[ 2018-04-08T15:50:34+08:00 ] 127.0.0.1 /File/upload
+ERR: 无法加载控制器:File
+
+[ 2018-04-08T16:36:03+08:00 ] 127.0.0.1 /index.php
+ERR: 无法加载控制器:Index
+

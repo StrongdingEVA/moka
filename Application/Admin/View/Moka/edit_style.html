@@ -1,0 +1,130 @@
+<extend name="Public/base"/>
+<block name="body">
+    <style>
+        .modelspic{height: 150px}
+    </style>
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}模卡风格</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">别名<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="id_a" value="{$info.id_a}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">排序<span class="check-tips">数字越小越靠前</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="sort" value="{$info.sort}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">风格标题<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">风格名称<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">设置图片数量<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="pic_num" value="{$info.pic_num|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">操作<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="button" style="" class="btn" id="clearPics" value="清空所有图片"/>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">选择图片<span class="check-tips"></span></label>
+            <input type="hidden" name="pics" id="pics" value="{:implode(',',$info['pics'])}">
+            <foreach name="info.pics" item="item" >
+                <img class="modelspic" src="{$item}" alt="">
+            </foreach>
+            <div class="controls" id="fileuploader" style="width: 100%;">
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">图片点集合<span class="check-tips"></span></label>
+            <div class="controls">
+                <textarea name="points" id="" cols="90" rows="10">{$info.points}</textarea>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">扩展信息<span class="check-tips"></span></label>
+            <div class="controls">
+                <span>淘宝等级：</span><input type="text" class="text input-normall" name="ext[level]" value="{$info.ext_info.level}">&nbsp;&nbsp;
+                <span>淘气值：</span><input type="text" class="text input-normall" name="ext[naughty]" value="{$info.ext_info.naughty}">
+            </div>
+            <div class="controls">
+                <span>地&nbsp;&nbsp;区：</span><input type="text" class="text input-small" name="ext[province]" value="{$info.ext_info.province}">省&nbsp;&nbsp;
+                <input type="text" class="text input-small" name="ext[city]" value="{$info.ext_info.city}">市
+            </div>
+            <div class="controls">
+                <span>身&nbsp;&nbsp;高：</span><input type="text" class="text input-small" name="ext[height]" value="{$info.ext_info.height}">cm&nbsp;&nbsp;
+                <span>胸&nbsp;&nbsp;围：</span><input type="text" class="text input-small" name="ext[chestline]" value="{$info.ext_info.chestline}">cm&nbsp;&nbsp;
+                <span>腰&nbsp;&nbsp;围：</span><input type="text" class="text input-small" name="ext[waistline]" value="{$info.ext_info.waistline}">cm&nbsp;&nbsp;
+                <span>臀&nbsp;&nbsp;围：</span><input type="text" class="text input-small" name="ext[hipline]" value="{$info.ext_info.hipline}">cm&nbsp;&nbsp;
+            </div>
+            <div class="controls">
+                <span>体&nbsp;&nbsp;重：</span><input type="text" class="text input-small" name="ext[weight]" value="{$info.ext_info.weight}">kg
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="status" value="1" <neq name="info.status" value="0">checked="checked"</neq>>启用 &nbsp; &nbsp;
+                <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq>>禁用
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__JS__/jquery.uploadfile.min.js"></script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('index')}");
+        $(function(){
+            $("#fileuploader").uploadFile({
+                url:"Admin/File/upload",
+                dragDropStr:'点击选择图片',
+                uploadStr:'点击选择图片',
+                allowedTypes:'jpg,png,jpeg,gif',
+                extErrorStr:'只能上传以下格式的文件:',
+                fileName:"myfile",
+                onSuccess:function(files, response, xhr, pd){
+                    if(parseInt(response.status) == 1){ //上传成功
+                        var file = response.data.myfile.thumb;
+                        var pics = $('#pics').val();
+                        pics += pics ? ',' + file : file;
+                        $('#pics').val(pics);
+                        $('#fileuploader').before('<img class="modelspic" src="'+ file +'" />');
+                    }else{
+                        alert('图片上传失败');
+                    }
+                }
+            });
+        })
+
+        $('#clearPics').click(function(){
+            $('.modelspic').remove();
+            $('#pics').val('');
+        })
+    </script>
+</block>

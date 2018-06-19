@@ -1,0 +1,166 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            随便看看分类      
+        </h2>
+    </div>
+    <div class="cf">
+        <div class="fl">
+            <div class="btn-group"> 
+                <a href="{:US('Account/add')}" class="btn" >添加分类</a>               
+            </div>
+        </div>
+        <div class="search-form fr cf">
+            <div class="btn-group">   
+                <form method="post" action="{:U('Account/index')}">
+                    <span style="margin-left: 20px;">名称：</span>
+                    <input type="text" name="title" title="标题" class="ipt5" value="{$name}">               
+                    <input type="submit" class="submit btn5" value="查  询">     
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table>
+
+            <thead>
+                <tr class="nbg">                  
+                    <th>编号</th>                   
+                    <th>标题</th>                                  
+                    <th>排序</th>
+                    <th>账号数量</th>                    
+                    <th>状态</th>
+                    <th width="200">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+                <tr>                  
+                    <td>{$vo.id}</td>
+                    <td>{$vo.title}</td> 
+                    <td>{$vo.listorder}</td>
+                    <td>{$vo.count}</td> 
+                    <td>
+                <if condition="$vo.status eq 1">
+                    显示   
+                    <else />
+                    隐藏
+                </if>
+                </td>               
+                <td>
+                    <a href="{:U('Account/applist',array('id'=>$vo['id']))}">查看账号</a>&nbsp;&nbsp;
+                <if condition="$vo['status'] == 1">
+                    <a href="{:U('Account/change',array('id'=>$vo['id'],'field'=>'status','value'=>0))}">隐藏</a>&nbsp;&nbsp;
+                    <else />
+                    <a href="{:U('Account/change',array('id'=>$vo['id'],'field'=>'status','value'=>1))}">显示</a>&nbsp;&nbsp;
+                </if>
+                <a href="{:U('Account/edit',array('id'=>$vo['id']))}">修改</a>&nbsp;&nbsp;
+                <a href="{:U('Account/delete',array('id'=>$vo['id']))}" class="_delete_btn">删除</a>
+                </td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+    <!-- 分页 -->   
+    <div class="page">
+        {$page}
+    </div>   
+</div>
+<div class="_show_zt_win" style="display: none">
+    <div style='padding: 10px;' class="_show_zt_win_content">
+        <table>
+            <tr class="_top_search">
+                <td>
+                    <label>专题名称：</label><input type="text" name="search" class="ipt4" value=''>
+                    <input type="button"  class="submit btn5 _btn_search_get" value="查找" style="display:inline-block" />
+                    <input type="button"  class="submit btn5 _btn_cx_add" value="推送"  style="display:inline-block; " />
+                </td>
+            </tr>
+        </table>
+        <div style='height: 200px; overflow-y: auto; overflow-x: hidden'>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+                <tr class="_bottom_btn">               
+                    <td style="padding-top:30px; text-align: right;">                      
+                    </td>
+                </tr>
+            </table>  
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('._delete_btn').click(function (event) {
+            var a = this;
+            event.preventDefault();
+            layer.confirm('确定删除？', {
+                btn: ['确定', '取消'] //按钮
+            }, function () {
+                location.href = $(a).attr('href');
+            });
+        });
+        $('._put_special').click(function () {
+            layer.open({
+                type: 1,
+                title: '推送专题',
+                skin: 'layui-layer-rim', //加上边框
+                area: ['450px'], //宽高              
+                content: $('._show_zt_win').html()
+            });
+            $('.layui-layer ._btn_cx_add').attr('data-id', $(this).attr('data-id'));
+            $('.layui-layer ._btn_search_get').click();
+        });
+        $('body').delegate('._btn_search_get', 'click', function () {
+            var search = $(this).parent().find('input[name=search]').val();
+            get_special_list(search);
+        });
+
+        $('body').delegate('._btn_cx_add', 'click', function () {
+            var aid = $(this).attr('data-id');
+            var cid = $('.layui-layer input[name=specialid]:checked').val();
+            put_special(aid, cid);
+        });
+    });
+
+    function put_special(aid, cid) {
+        if (typeof (cid) == "undefined" || cid == '') {
+            layer.msg('请选择专题');
+            return;
+        }
+        if (typeof (aid) == "undefined" || aid == '') {
+            layer.msg('请选择要推送的公众号');
+            return;
+        }
+
+        var url = "{:US('Account/appadd')}";
+        $.post(url, {cid: cid, aid: aid}, function (data) {
+            layer.msg(data.info);
+            if (data.status) {
+                setTimeout(function () {
+                    layer.closeAll();
+                }, 1000);
+            }
+        });
+    }
+
+    function get_special_list(search) {
+        var url = "{:US('Account/getlist')}&search=" + encodeURIComponent(search);
+        $.get(url, function (data) {
+            if (data.length) {
+                var tr = '';
+                for (var i = 0; i < data.length; ++i) {
+                    tr += '<tr class="_special_list">';
+                    tr += '   <td style="line-height: 25px"><label><input name="specialid" type="radio" value="' + data[i]['id'] + '" />&nbsp;&nbsp;' + data[i]['title'] + '</label> </td>';
+                    tr += '</tr>';
+                }
+            }
+            $('.layui-layer ._special_list').remove();
+            $('.layui-layer ._bottom_btn').before(tr);
+        }, 'json');
+    }
+</script>
+</block>

@@ -1,0 +1,477 @@
+[ 2018-05-30T17:13:27+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_collect` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_style` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:14:26+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:14:47+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:14:54+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:16:30+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:16:57+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:17:07+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:17:18+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:18:25+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:22:08+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:23:36+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:23:45+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0060s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:23:59+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:26:04+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:26:28+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:28:07+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:28:32+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:28:42+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:28:54+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:29:34+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:29:41+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:29:47+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:29:48+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:29:48+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:29:49+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:31:54+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:32:10+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T17:45:51+08:00 ] 127.0.0.1 /api.php/Moka/getModelBySearch
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,8   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0040s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-30T17:52:46+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+NOTIC: [2048] Declaration of Common\Model\StyleModel::getList() should be compatible with Common\Model\CommonModel::getList($param, $return_total = false) D:\phpStudy\WWW\moka\Application\Common\Model\StyleModel.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `mk_collect` [ RunTime:0.0050s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `s_id`,`great_num`,`uid`,`id`,`great`,`pic_json`,`create_time` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-30T18:01:11+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid`,`height`,`weight`,`chestline`,`waistline`,`hipline`,`clicks` FROM `mk_member_info` WHERE `openid` IN ('E824CA4A-E4EC-DDF5-D964-40E51A32F564','6880397C-6913-0E98-CEBC-B9EDB2C2C82C')  [ RunTime:0.0010s ]
+

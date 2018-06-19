@@ -1,0 +1,79 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}APP版本</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">应用<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="appid" id="appid">
+                    <!--<option value="0">请选择</option>-->
+                    <volist name="applist" id="vo">
+                        <option value="{$key}" <if condition='$key eq $info[appid]'>selected='selected'</if>>{$vo}</option>
+                    </volist>
+                </select>
+            </div>
+        </div> 
+        <div class="form-item">
+            <label class="item-label">平台<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="platform" value="1" <if condition="!$info['platform'] or $info['platform'] eq 1">checked="checked"</if>>Android&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="platform" value="2" <eq name="info.platform" value="2">checked="checked"</eq>>iOS&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="platform" value="3" <eq name="info.platform" value="3">checked="checked"</eq>>WP
+            </div>
+        </div> 
+        <div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="status" value="1" <neq name="info.status" value="0">checked="checked"</neq>>启用&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq>>禁用
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">版本<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="version" value="{$info.version|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">渠道<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="channel" value="{$info.channel|default='official'}">
+            </div>
+        </div>
+         <div class="form-item">
+            <label class="item-label">强制更新<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="forced" value="1" <eq name="info.forced" value="1">checked="checked"</eq>>是&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="forced" value="0" <eq name="info.forced" value="0">checked="checked"</eq>>否
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">下载地址<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="download_url" value="{$info.download_url|default=''}">
+            </div>
+        </div>
+        
+         <div class="form-item">
+            <label class="item-label">描述<span class="check-tips"></span></label>
+            <div class="controls">
+                <textarea name="content"  rows="8" style='width:400px'>{$info.content}</textarea>
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('info')}");
+    </script>
+</block>

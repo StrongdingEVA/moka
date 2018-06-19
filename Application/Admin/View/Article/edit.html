@@ -1,0 +1,124 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}问题</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">标题<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="status" value="1" <neq name="info.status" value="0">checked="checked"</neq>>启用 &nbsp; &nbsp; <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq>>禁用
+            </div>
+        </div> 
+        <div class="form-item">
+            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="listorder" value="{$info.listorder|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">发布时间<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" id="datetimepicker" class="text input-large time" name="create_time" value="{$info.create_time|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">内容<span class="check-tips"></span></label>
+            <div class="controls">
+                <label class="textarea">
+                    <textarea name="content">{$info.content}</textarea>
+                    {:hook('adminArticleEdit', array('name'=>'content','value'=>$info['content']))}
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <!-- 时间选择 -->
+    <link rel='stylesheet' type="text/css" href="__STATIC__/datetimepicker/jquery.datetimepicker.css" />
+    <script type="text/javascript" src="__STATIC__/datetimepicker/jquery.datetimepicker.js"></script>
+    <!-- 图片上传 -->
+    <script type="text/javascript" src="__STATIC__/webuploader/webuploader.js"></script>
+    <script type="text/javascript">
+        highlight_subnav("{:U('Article/index')}");
+        $(function(){
+            $('#datetimepicker').datetimepicker();
+
+            //调用上传图片
+            var uploader = WebUploader.create({
+                // 选完文件后，是否自动上传。
+                auto: false,
+                // swf文件路径
+                swf: '__STATIC__/webuplader/Uploader.swf',
+                // 文件接收服务端。
+                server: "{:U('File/uploadPicture')}",
+                // 选择文件的按钮。可选。
+                // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+                pick: {
+                    id: '#filePicker',
+                    multiple: false
+                },
+                //限制图片数量
+                fileSizeLimit: 40 * 1024 * 1024,
+                fileSingleSizeLimit: 8 * 1024 * 1024,
+                // 只允许选择图片文件。
+                accept: {
+                    title: 'Images',
+                    extensions: 'jpg,gif,png,jpeg',
+                    mimeTypes: 'image/jpg,image/gif,image/png,image/jpeg'
+                }
+            });
+
+            // 当有文件添加进来的时候
+            uploader.on('error', function (handler) {
+                if (handler == 'Q_EXCEED_SIZE_LIMIT' || handler == 'F_EXCEED_SIZE') {
+                    layer.msg('上传图片最大不超过8M');
+                    return;
+                }
+            });
+
+            // 当有文件添加进来的时候
+            uploader.on('fileQueued', function (file) {
+                uploader.upload();
+            });
+
+            // 文件上传过程中创建进度条实时显示。
+            uploader.on('uploadProgress', function (file) {
+
+            });
+
+            // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+            uploader.on('uploadSuccess', function (file, ret) {
+                if (ret.status == 0) {
+                    layer.msg(ret.info);
+                } else {
+                    $('#thumb').val(ret.data.file.url);
+                    $("#img").attr('src', ret.data.file.url);
+                }
+            });
+
+            // 文件上传失败，显示上传出错。
+            uploader.on('uploadError', function (file) {
+                layer.msg('上传出错');
+            });
+
+            // 完成上传完了，成功或者失败，先删除进度条。
+            uploader.on('uploadComplete', function (file) {
+
+            });
+        });
+    </script>
+</block>

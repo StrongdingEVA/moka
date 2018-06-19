@@ -1,0 +1,138 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>模卡列表</h2>
+    </div>
+
+    <div class="cf">
+        <button class="btn ajax-post confirm" url="{:U('delOrder')}" target-form="ids">删 除</button>
+
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft">
+                <select name="status">
+                    <option value="-1" <eq name="status" value="-1">selected</eq>>所有</option>
+                    <option value="0" <eq name="status" value="0">selected</eq>>待支付</option>
+                    <option value="1" <eq name="status" value="1">selected</eq>>支付成功</option>
+                    <option value="2" <eq name="status" value="2">selected</eq>>支付失败</option>
+                </select>
+            </div>
+            <div class="sleft">
+                <input type="hidden" name="status" id="status" value="{$status}">
+                <input type="text" name="nickname" class="search-input" value="{:I('nickname')}" placeholder="请输入打赏用户名">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('reward')}"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+            <tr>
+                <th class="row-selected">
+                    <input class="checkbox check-all" type="checkbox">
+                </th>
+                <th>ID</th>
+                <th style="width: 10%;">打赏人</th>
+                <th style="width: 10%">被打赏</th>
+                <th style="width: 5%">金额</th>
+                <th style="width: 15%">订单号</th>
+                <th style="width: 15%">微信单号</th>
+                <th style="width: 10%">支付状态</th>
+                <th>下单时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.u_nickname}</a></td>
+                        <td>{$vo.r_nickname}</a></td>
+                        <td>{$vo.amount}</td>
+                        <td>{$vo.order_no}</td>
+                        <td>{$vo.wx_no}</td>
+                        <td>
+                            <if condition="$vo['status'] eq 1">
+                                支付成功
+                                <elseif condition="$vo['status'] eq 2"/>
+                                支付失败
+                                <else/>
+                                待支付
+                            </if>
+                        </td>
+                        <td>{$vo.create_time|time_format}</td>
+                        <td>
+                            <a title="编辑" href="{:U('editCard',array('cid'=>$vo['id']))}">编辑</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('delOrder',array('id'=>$vo['id']))}">彻底删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function () {
+            //筛选
+            $('[name="status"]').on('change', function () {
+                var status = $(this).val();
+                $('#status').val(status);
+                $("#search").click();
+            });
+            //搜索功能
+            $("#search").click(function () {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //点击排序
+            $('.list_sort').click(function () {
+                var url = $(this).attr('url');
+                var ids = $('.ids:checked');
+                var param = '';
+                if (ids.length > 0) {
+                    var str = new Array();
+                    ids.each(function () {
+                        str.push($(this).val());
+                    });
+                    param = str.join(',');
+                }
+
+                if (url != undefined && url != '') {
+                    window.location.href = url + '/ids/' + param;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('reward')}");
+    </script>
+</block>

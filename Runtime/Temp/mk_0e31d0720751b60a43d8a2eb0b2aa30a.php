@@ -1,0 +1,3 @@
+<?php
+//000000003600a:16:{s:2:"id";s:1:"3";s:4:"type";s:1:"2";s:4:"name";s:21:"这里是主图拍照";s:5:"price";s:7:"1580.00";s:3:"num";s:1:"5";s:5:"level";s:1:"3";s:5:"thumb";s:36:"Uploads/2018-05-23/5b04e16eca69f.jpg";s:8:"nickname";s:18:"哈哈哈哈哈哈";s:8:"descript";s:58:"都发生大asdfa啊的说法啊的说法啊的说法asdfa";s:3:"pic";s:36:"Uploads/2018-05-23/5b04e16eca69f.jpg";s:7:"naughty";s:1:"1";s:7:"contact";s:8:"aaaaaaaa";s:11:"create_time";s:10:"1528078183";s:5:"prize";s:10:"bbbbbbbbbb";s:11:"share_timer";s:1:"0";s:6:"status";s:1:"1";}
+?>

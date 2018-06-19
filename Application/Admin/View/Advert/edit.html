@@ -1,0 +1,134 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}广告</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">广告名称<span class="check-tips">(用于后台显示的标题)</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>       
+        <div class="form-item">
+            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="sort" value="{$info.sort|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">广告位置<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="pos_id">
+                    <option value="0">请选择</option>
+                    <volist name="poslist" id="vo">
+                        <option value="{$vo.id}" <eq name="info.pos_id" value="$vo['id']">selected</eq>>{$vo.title}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="form-item cf" id="type1">
+            <label class="item-label">广告图片<span class="check-tips">（请上传广告图片）</span></label>
+            <div class="controls">
+                <input type="file" id="upload_picture_advspic">
+                <input type="hidden" name="image" id="cover_id_advspic" value="{$info.image}"/>
+                <div class="upload-img-box">
+                    <notempty name="info['image']"><div class="upload-pre-item"><img src="{$info.image}"/></div></notempty>
+                </div>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">广告链接<span class="check-tips">（H5,PC广告必填）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="url" value="{$info.url|default=''}">
+            </div>
+        </div>
+         <div class="form-item">
+            <label class="item-label">关联ID<span class="check-tips">（填写广告关联的小程序、公众号、轻应用、专题等对应ID）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="obj_id" value="{$info.obj_id|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">打开方式<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="target" value="_blank" <neq name="info.target" value="_self">checked="checked"</neq>>新窗口&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="target" value="_self" <eq name="info.target" value="_self">checked="checked"</eq>>当前窗口
+            </div>
+        </div>        
+         <div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="status" value="1" <neq name="info.status" value="0">checked="checked"</neq>>启用&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq>>禁用
+            </div>
+        </div>         
+         <div class="form-item">
+            <label class="item-label">分享标题<span class="check-tips">(用于分享的标题)</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="subtitle" value="{$info.subtitle|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">分享描述<span class="check-tips">(用于分享的描述)</span></label>
+            <div class="controls">
+                <label class="textarea input-large">
+                   <textarea name="description">{$info.description|default=''}</textarea>              
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+    <script type="text/javascript">
+        /* 初始化上传插件 */
+        $(function () {
+            $("#upload_picture_advspic").uploadify({
+                "height": 30,
+                "swf": "__STATIC__/uploadify/uploadify.swf",
+                "fileObjName": "download",
+                "buttonText": "上传图片",
+                "uploader": "{:U('File/uploadify',array('session_id'=>session_id()))}",
+                "width": 120,
+                'multi': false,
+                'removeTimeout': 1,
+                'fileTypeExts': '*.jpg; *.png; *.gif;',
+                "onUploadSuccess": uploadPicture,
+                'onFallback': function () {
+                    alert('未检测到兼容版本的Flash.');
+                }
+            });
+
+            function uploadPicture(file, data) {
+                var data = $.parseJSON(data);
+                var src = '';
+                if (data.status) {
+                    $("#cover_id_advspic").val(data.url);
+                    src = data.url || data.savepath;
+                    $("#cover_id_advspic").parent().find('.upload-img-box').html(
+                        '<div class="upload-pre-item"><img src="' + src + '"/></div>'
+                    );
+                } else {
+                    updateAlert(data.info);
+                    setTimeout(function () {
+                        $('#top-alert').find('button').click();
+                        $(that).removeClass('disabled').prop('disabled', false);
+                    }, 1500);
+                }
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('index')}");
+    </script>
+</block>

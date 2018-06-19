@@ -1,0 +1,126 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>广告位</h2>
+    </div>
+
+    <div class="cf">
+        <a class="btn" href="{:U('addPos')}">新 增</a>
+        <button class="btn ajax-post confirm" url="{:U('delPos')}" target-form="ids">删 除</button>
+
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+           过滤：<select name="sel_filter">
+                <option value="-1" <if condition='$class eq -1'>selected='selected'</if>>全部</option>
+                <option value="0" <if condition='$class eq 0'>selected='selected'</if>>全局</option>
+                <option value="1" <if condition='$class eq 1'>selected='selected'</if>>PC</option>
+                <option value="2" <if condition='$class eq 2'>selected='selected'</if>>H5</option>
+                <option value="3" <if condition='$class eq 3'>selected='selected'</if>>APP小程序</option>
+                <option value="4" <if condition='$class eq 4'>selected='selected'</if>>APP轻应用</option>                    
+                <option value="5" <if condition='$class eq 5'>selected='selected'</if>>APP公众号</option>
+           </select>           
+            <div class="sleft">                 
+                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入广告位名称">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('pos')}"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+                <tr>
+                    <th class="row-selected">
+                        <input class="checkbox check-all" type="checkbox">
+                    </th>
+                    <th>ID</th>
+                    <th>模块</th>
+                    <th>广告位名称</th>
+                    <th>广告位英文名</th>
+                    <th>类型</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                        <td>{$vo.id}</td>
+                        <td>
+                    <if condition="$vo['class'] eq 1">PC<elseif condition="$vo['class'] eq 2" />H5<elseif condition="$vo['class'] eq 3" />小程序<elseif condition="$vo['class'] eq 4" />轻应用<elseif condition="$vo['class'] eq 5" />公众号<else />全局</if>
+                    </td>
+                    <td><a href="{:U('index',array('pid' => $vo['id']))}">{$vo.title}</a></td>
+                    <td>{$vo.name}</td>
+                    <td><if condition="$vo['type'] eq 1">单图<elseif condition="$vo['type'] eq 2" />多图<elseif condition="$vo['type'] eq 3" />文字链接<else />代码</if></td>
+                    <td>
+                        <a title="编辑" href="{:U('editPos',array('id'=>$vo['id']))}">编辑</a>
+                        <a href="{:U('changeField',array('id'=>$vo['id'],'value'=>abs($vo['status']-1),'model'=>'AdvPos'))}" class="ajax-get"><eq name="vo.status" value="1">禁用<else/>启用</eq></a>
+                        <a class="confirm ajax-get" title="删除" href="{:U('delPos',array('id'=>$vo['id']))}">删除</a>
+                    </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function () {
+             $('select[name=sel_filter]').change(function () {
+            location.href = cleara(SELF) + "&a=pos&sel_filter=" + $(this).val();
+        });
+            
+            //搜索功能
+            $("#search").click(function () {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //点击排序
+            $('.list_sort').click(function () {
+                var url = $(this).attr('url');
+                var ids = $('.ids:checked');
+                var param = '';
+                if (ids.length > 0) {
+                    var str = new Array();
+                    ids.each(function () {
+                        str.push($(this).val());
+                    });
+                    param = str.join(',');
+                }
+
+                if (url != undefined && url != '') {
+                    window.location.href = url + '/ids/' + param;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('pos')}");
+    </script>
+</block>

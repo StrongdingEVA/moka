@@ -1,0 +1,15 @@
+[ 2018-05-31T11:27:49+08:00 ] 127.0.0.1 /index.php?s=/admin/article/index
+ERR: Think\Model:getListRows方法不存在！
+
+[ 2018-05-31T11:30:34+08:00 ] 127.0.0.1 /index.php?s=/admin/article/index
+ERR: Think\Model:getListRows方法不存在！
+
+[ 2018-05-31T11:35:53+08:00 ] 127.0.0.1 /index.php?s=/admin/article/add
+ERR: Think\Model:getListRows方法不存在！
+
+[ 2018-05-31T11:49:16+08:00 ] 127.0.0.1 /index.php?s=/admin/article/add
+ERR: 模板不存在:./Application/Admin/View/Article/add.html
+
+[ 2018-05-31T11:49:17+08:00 ] 127.0.0.1 /index.php?s=/admin/article/add
+ERR: 模板不存在:./Application/Admin/View/Article/add.html
+

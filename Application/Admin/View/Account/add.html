@@ -1,0 +1,39 @@
+<extend name="Public/base" />
+<block name="body">   	
+    <div class="main-title cf">
+        <h2>
+            添加分类
+        </h2>
+    </div>
+    <!-- 标签页导航 -->
+    <div class="tab-wrap">        
+        <div class="tab-content">
+            <form method='post' id="form1" class='form-horizontal' name="form1" action="{:U('Account/insert')}"  enctype="multipart/form-data">
+                <div class="form-item cf">
+                    <label class="item-label">标题<span class="check-tips">（分类名称）</span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="title" value=""><span class="must">*</span>              
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">排序<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <input type="number" class="text input-large" value="" name="listorder">                          
+                    </div>
+                </div>               
+                <div class="form-item cf">
+                    <label class="item-label">状态<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <input type="radio" name="status" value="0" >&nbsp;隐藏&nbsp;&nbsp;
+                        <input type="radio" name="status" value="1" checked="true">&nbsp;显示     
+                    </div>
+                </div>             
+
+                <div class="form_b">
+                    <input type="submit" class="submit btn" id="submit" value="提 交">                   
+                </div>
+            </form>
+        </div>
+    </div>  
+</block>
+

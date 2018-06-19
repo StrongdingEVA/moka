@@ -1,0 +1,440 @@
+[ 2018-05-21T18:28:47+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'id' in 'field list'
+ [ SQL语句 ] : SELECT `id` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+ERR: 1054:Unknown column 'id' in 'field list'
+ [ SQL语句 ] : SELECT `id` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+
+[ 2018-05-21T18:31:24+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 56 行.
+
+[ 2018-05-21T18:31:59+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'openids' in 'field list'
+ [ SQL语句 ] : SELECT `openids` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+ERR: 1054:Unknown column 'openids' in 'field list'
+ [ SQL语句 ] : SELECT `openids` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+
+[ 2018-05-21T18:32:38+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 57 行.
+NOTIC: [8] Undefined index: thumb D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 58 行.
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 57 行.
+NOTIC: [2] Illegal string offset 'thumb' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 58 行.
+
+[ 2018-05-21T18:34:13+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 57 行.
+NOTIC: [8] Undefined index: thumb D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 58 行.
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 57 行.
+NOTIC: [8] Undefined index: thumb D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 58 行.
+
+[ 2018-05-21T18:34:47+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'open_id' in 'field list'
+ [ SQL语句 ] : SELECT `open_id` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+ERR: 1054:Unknown column 'open_id' in 'field list'
+ [ SQL语句 ] : SELECT `open_id` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+
+[ 2018-05-21T18:35:16+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'open_id' in 'field list'
+ [ SQL语句 ] : SELECT `open_id` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+ERR: 1054:Unknown column 'open_id' in 'field list'
+ [ SQL语句 ] : SELECT `open_id` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3  
+
+[ 2018-05-21T18:35:43+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:36:09+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:36:29+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:36:46+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:36:59+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'openid' D:\phpStudy\WWW\moka\Application\Common\Model\MemberInfoModel.class.php 第 120 行.
+SQL: SELECT `openid` FROM `mk_member_info` WHERE ( openid="6" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_507d3458878f2c8fd6f86752ea2949d2.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'openid' D:\phpStudy\WWW\moka\Application\Common\Model\MemberInfoModel.class.php 第 120 行.
+SQL: SELECT `openid` FROM `mk_member_info` WHERE ( openid="E" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/mk_672455900b63f3ad03b67b15f1cac416.php): No such file or directory D:\phpStudy\WWW\moka\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 170 行.
+
+[ 2018-05-21T18:37:18+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:37:44+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `openid` FROM `mk_member_info` WHERE ( openid="6880397C-6913-0E98-CEBC-B9EDB2C2C82C" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `openid` FROM `mk_member_info` WHERE ( openid="E824CA4A-E4EC-DDF5-D964-40E51A32F564" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:37:55+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 56 行.
+NOTIC: [8] Undefined index: thumb D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 57 行.
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 56 行.
+NOTIC: [8] Undefined index: thumb D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 57 行.
+
+[ 2018-05-21T18:43:43+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:44:05+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:45:27+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:45:54+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:46:08+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:46:58+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:47:17+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:47:42+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( openid="6880397C-6913-0E98-CEBC-B9EDB2C2C82C" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE ( openid="E824CA4A-E4EC-DDF5-D964-40E51A32F564" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2018-05-21T18:52:50+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-' at line 1
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE (  (  in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-D964-40E51A32F564 ) ) ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-' at line 1
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE (  (  in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-D964-40E51A32F564 ) ) ) 
+
+[ 2018-05-21T18:52:58+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-' at line 1
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE (  in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-D964-40E51A32F564 ) ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-' at line 1
+ [ SQL语句 ] : SELECT * FROM `mk_member_info` WHERE (  in ) AND (  (  6880397C-6913-0E98-CEBC-B9EDB2C2C82C ) AND (  E824CA4A-E4EC-DDF5-D964-40E51A32F564 ) ) 
+
+[ 2018-05-21T18:53:25+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:53:47+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: fiels D:\phpStudy\WWW\moka\Application\Common\Model\MemberInfoModel.class.php 第 119 行.
+SQL: SELECT * FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:54:08+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: fiels D:\phpStudy\WWW\moka\Application\Common\Model\MemberInfoModel.class.php 第 119 行.
+SQL: SELECT * FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:54:31+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:59:09+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = null AND `status` = 2 ORDER BY `great_num` desc,`id` asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = null AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 65 行.
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 59 行.
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 0 AND `status` = 2 ORDER BY `great_num` desc,`id` asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 0 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Illegal string offset 'cardList' D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 65 行.
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\moka\Application\Api\Logic\ApiLogic.class.php 第 59 行.
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = null AND `status` = 2 ORDER BY `great_num` desc,`id` asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = null AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T18:59:34+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 65 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 69 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 71 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 72 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 112 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 113 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 114 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 116 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 117 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 118 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 119 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 120 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 121 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 122 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 123 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 125 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 126 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 128 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 133 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 153 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 157 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 158 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 174 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 176 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 177 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 178 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 179 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 183 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 184 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 188 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 189 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 190 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 191 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 192 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 193 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 194 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 195 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 196 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 228 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 229 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 230 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 232 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 233 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 234 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 235 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 237 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 238 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 239 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 240 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 247 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 248 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 249 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 250 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 110 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_card` WHERE `id` = 111 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T19:00:57+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` asc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` asc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T19:01:48+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `great_num`,`uid`,`id`,`pic_json` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `great_num`,`uid`,`id`,`pic_json` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` asc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T19:02:44+08:00 ] 127.0.0.1 /api.php/Moka/getHotModel
+NOTIC: [8] Undefined index: sign D:\phpStudy\WWW\moka\Application\Api\Controller\BaseController.class.php 第 93 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0050s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_member_info` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` ORDER BY `clicks` desc,`uid` asc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member_info` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`thumb`,`openid` FROM `mk_member_info` WHERE `openid` IN ('6880397C-6913-0E98-CEBC-B9EDB2C2C82C','E824CA4A-E4EC-DDF5-D964-40E51A32F564')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0050s ]
+SQL: SELECT `great_num`,`uid`,`id`,`pic_json` FROM `mk_card` WHERE `uid` = 1 AND `status` = 2 ORDER BY `great_num` desc,`id` asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `great_num`,`uid`,`id`,`pic_json` FROM `mk_card` WHERE `uid` = 9 AND `status` = 2 ORDER BY `great_num` desc,`id` asc LIMIT 1   [ RunTime:0.0010s ]
+

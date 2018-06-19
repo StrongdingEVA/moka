@@ -1,0 +1,173 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            分类所属账号列表
+        </h2>
+    </div>
+    <div class="cf">
+        <div class="fl">
+            <div class="btn-group"> 
+                <input type="button"  class="btn _btn_addapp" value="添加账号">                            
+            </div>
+        </div>        
+    </div>
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table>
+
+            <thead>
+                <tr class="nbg">                  
+                     <th>编号</th>
+                    <th>所属分类</th>     
+                    <th>账号ID</th>
+                    <th>账号名称</th>
+                    <th>账号ICON</th>
+                    <th>排序</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+               <tr>                  
+                    <td>{$vo.id}</td>
+                    <td>{$vo.title}</td>
+                    <td>{$vo.aid}</td>
+                    <td>{$vo.app.title}</td>
+                    <td><img src="{$vo.app.icon|thumb=###,60,60}" style="height: 60px" /></td>  
+                    <td title="点击修改" class="_edit_order" style="cursor: pointer">
+                        <span class="_view_txt">{$vo.listorder}</span>
+                        <span class="_edit_order_txt" style="display:none">
+                            <input type="text" name="name" data-id="{$vo.id}" title="排序" value="{$vo.listorder}"  style="width: 30px">
+                        </span>
+                    </td>
+                    <td>                     
+                        <a href="{:U('Account/appdel',array('id'=>$vo['id']))}" class=".delete_btn">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+    <!-- 分页 -->   
+    <div class="page">
+        {$page}
+    </div>   
+</div>
+<div class="_show_zt_win" style="display: none">
+    <div style='padding: 10px;' class="_show_zt_win_content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">   
+            <tr class="_top_search">
+                <td>
+                    <label>公众号名称：</label><input type="text" name="search" class="ipt4" value=''>
+                    <input type="button"  class="submit btn5 _btn_search_get" value="查找" style="display:inline-block" />
+                    <input type="button"  class="submit btn5 _btn_cx_add" value="添加" data-id="{$cid}" style="display:inline-block; " />
+                </td>
+            </tr>
+            <tr class="_bottom_btn">               
+                <td style="padding-top:30px; text-align: right;">                      
+                </td>
+            </tr>
+        </table>       
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('._btn_addapp').click(function () {
+            layer.open({
+                type: 1,
+                title: '公众号',
+                skin: 'layui-layer-rim', //加上边框
+                area: ['450px', '250px'], //宽高              
+                content: $('._show_zt_win').html()
+            });
+        });
+        $('body').delegate('._btn_search_get', 'click', function () {
+            var search = $(this).parent().find('input[name=search]').val();
+            get_app_list(search);
+        });
+
+        $('body').delegate('._btn_cx_add', 'click', function () {
+            var cid = $(this).attr('data-id');
+            var aid = $('.layui-layer input[name=appid]:checked').val();
+            appadd(aid,cid);
+        });
+        
+        $('._edit_order').click(function () {
+            $(this).find('._view_txt').hide();
+            $(this).find('._edit_order_txt').show();
+            $(this).find('._edit_order_txt input').focus();
+        });
+
+        $('._edit_order_txt').focusout(function () {
+            $(this).parent().find('._view_txt').show();
+            $(this).parent().find('._edit_order_txt').hide();
+        });
+
+        $('._edit_order_txt input').keyup(function () {
+            var obj=this;
+            var id = $(this).attr('data-id');
+            var order = $(this).val();
+            var url = cleara(SELF) + "&a=ajax_app_order&id=" + id + "&order=" + order;
+            $.get(url, function (data) {
+                if(data.status){
+                  $(obj).parents('._edit_order').find('._view_txt').text(order); 
+                }
+            }, 'json');
+        });
+    });
+
+
+//    function add() {
+//        location.href = "{:U('special/appadd')}";
+//    }
+
+    function foreverdel(obj) {
+        layer.confirm('您确定删除？', {
+            btn: ['确定', '取消'] //按钮
+        }, function () {
+            location.href = $(obj).attr('data-href');
+        });
+    }
+
+    function appadd(aid, cid) {
+        if (typeof (aid) == "undefined" || aid == '') {
+            layer.msg('请输入要添加的公众号');
+            return;
+        }
+
+        var url = cleara(SELF) + "&a=appadd";
+        $.post(url, {cid: cid, aid: aid}, function (data) {
+            layer.msg(data.info);
+            if (data.status) {
+                location.reload();
+            }
+        });
+    }
+
+
+
+    function get_app_list(search) {
+        if ($.trim(search).length <= 0) {
+            layer.msg('请输入公众号关键字查找');
+            return;
+        }
+        var url = cleara(SELF) + "&a=getapplist&search=" + encodeURIComponent(search);
+        $.get(url, function (data) {
+            if (data.length) {
+                var tr = '';
+                for (var i = 0; i < data.length; ++i) {
+                    tr += '<tr class="_app_list">';
+                    tr += '   <td style="line-height: 25px"><label><input name="appid" type="radio" value="' + data[i]['id'] + '" />&nbsp;&nbsp;' + data[i]['title'] + '</label> </td>';
+                    tr += '</tr>';
+                }
+            }
+            $('.layui-layer ._app_list').remove();
+            $('.layui-layer ._bottom_btn').before(tr);
+        }, 'json');
+    }
+
+</script>
+</block>

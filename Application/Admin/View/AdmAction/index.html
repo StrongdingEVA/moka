@@ -1,0 +1,96 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            操作记录     
+        </h2>
+    </div> 
+    <div class="cf">       
+        <div class="search-form fl cf">
+            <div class="btn-group">   
+                <form class="frmPost" method="get" action="{:U('Topic/index')}">
+                    管理员：
+                    <select name="aid">
+                        <option value="0" <if condition='empty($aid)'>selected='selected'</if>>全部</option>
+                        <volist name="users" id="s">
+                            <option value="{$s.uid}" <if condition='$s.uid eq $aid'>selected='selected'</if>>[{$s.username}] {$s.nickname}</option>
+                        </volist> 
+                    </select> 
+                    类型：
+                    <select name="type">
+                        <option value="0" <if condition='empty($type)'>selected='selected'</if>>全部</option>
+                        <volist name="g_type" id="s" key="k">
+                            <option value="{$k}" <if condition='$k eq $type'>selected='selected'</if>>{$s}</option>
+                        </volist>                       
+                    </select> 
+                    状态：
+                    <select name="status">
+                        <option value="0" <if condition='empty($status)'>selected='selected'</if>>全部</option>
+                        <volist name="g_status" id="s" key="k">
+                            <option value="{$k}" <if condition='$k eq $status'>selected='selected'</if>>{$s}</option>
+                        </volist>                       
+                    </select> 
+                    时间：
+                    <input type="text" id="datetimepicker" class="text input-mid time" name="create_time" value="{$create_time}">
+                    <input type="button" class="_submit btn5" value="查  询">
+                    <input type="hidden" name="p" value="{$p}">
+                    <input type="hidden" name="{:C('VAR_ACTION')}" value="{:ACTION_NAME}">
+                    <input type="hidden" name="{:C('VAR_CONTROLLER')}" value="{:CONTROLLER_NAME}">
+                    <input type="hidden" name="{:C('VAR_MODULE')}" value="{:MODULE_NAME}">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table>
+            <thead>
+                <tr class="">  
+                    <th style="width:220px">管理员</th>
+                    <th style="width:80px">类型</th> 
+                    <th style="width:80px">事件</th>    
+                    <th >描述</th>  
+                    <th style="width:150px">操作时间</th>                    
+                </tr>  
+            </thead>
+            <tbody>                
+            <volist name="list" id="vo">
+                <tr>                  
+                    <td>[{$vo.user.username}] {$vo.user.nickname}</td>    
+                    <td>{$g_type[$vo['type']]}</td>
+                    <td>{$g_status[$vo['status']]}</td>
+                    <td>{$vo.remark}</td>                  
+                    <td>{$vo.create_time|date='Y-m-d H:i:s',###}</td>                   
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+    <!-- 分页 -->   
+    <div class="page">
+        {$page}
+    </div>   
+</div>
+<link rel='stylesheet' type="text/css" href="__STATIC__/datetimepicker/jquery.datetimepicker.css" />
+<script type="text/javascript" src="__STATIC__/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker').datetimepicker({format: 'Y-m-d H:i:s',});
+    });
+</script>
+<script>
+    $(function () {
+        $('.frmPost  select').change(function () {
+            $('.frmPost').submit();
+        });
+        $('._submit').click(function () {
+            $('input[name=p]').val(1);
+            $('.frmPost').submit();
+        });
+
+    });
+
+</script>
+</block>

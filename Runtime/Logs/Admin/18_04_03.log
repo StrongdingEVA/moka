@@ -1,0 +1,605 @@
+[ 2018-04-03T13:51:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/cardList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mk_hooks` [ RunTime:0.0040s ]
+SQL: SELECT `name`,`addons` FROM `mk_hooks`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_addons` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','SyncLogin','Advertising')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `mk_addons` WHERE `status` = 1 AND `name` IN ('Advs')  [ RunTime:0.0010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.069004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.069004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+
+[ 2018-04-03T13:51:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:08+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:12+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-03T13:51:12+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/verify&random=0.7667956879875015
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/verify&random=0.11250388153816404
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/verify&random=0.9407274873550189
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Constant UC_APP_ID already defined D:\phpStudy\WWW\moka\Application\User\Conf\config.php 第 18 行.
+NOTIC: [8] Constant UC_API_TYPE already defined D:\phpStudy\WWW\moka\Application\User\Conf\config.php 第 19 行.
+NOTIC: [8] Constant UC_AUTH_KEY already defined D:\phpStudy\WWW\moka\Application\User\Conf\config.php 第 20 行.
+NOTIC: [8] Constant UC_DB_DSN already defined D:\phpStudy\WWW\moka\Application\User\Conf\config.php 第 21 行.
+NOTIC: [8] Constant UC_TABLE_PREFIX already defined D:\phpStudy\WWW\moka\Application\User\Conf\config.php 第 22 行.
+NOTIC: [8] Undefined index: HTTP_X_REAL_IP D:\phpStudy\WWW\moka\ThinkPHP\Common\functions.php 第 1759 行.
+SQL: SHOW COLUMNS FROM `mk_member` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`make_num`,`thumb` FROM `mk_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_action` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `mk_member` SET `login`=`login`+1,`last_login_time`='1522734680',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0020s ]
+
+[ 2018-04-03T13:51:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\IndexController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 1 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `mk_addons` [ RunTime:0.0050s ]
+SQL: SELECT `config` FROM `mk_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_member` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_member` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_action_log` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_action_log` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_document` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_document` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_category` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_category` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_model` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_model` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.102006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.101005s ]
+SQL: SELECT `config` FROM `mk_addons` WHERE `name` = 'SyncLogin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: display D:\phpStudy\WWW\moka\Addons\SyncLogin\SyncLoginAddon.class.php 第 76 行.
+INFO: Run Addons\SyncLogin\SyncLoginAddon [ RunTime:0.002001s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.103006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-03T13:51:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/Advert/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdvertController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\AdvertController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Advert/index%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'App管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_advs` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_advs` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pos_id`,`image`,`click_count`,`url`,`obj_id`,`sort`,`status`,`create_time`,`start_time`,`end_time`,`target` FROM `mk_advs` WHERE `status` >= 0 ORDER BY `sort`,`id` LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_adv_pos` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `mk_adv_pos`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: where D:\phpStudy\WWW\moka\Application\Common\Model\CommonModel.class.php 第 140 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_adv_pos` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_adv_pos` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mk_adv_pos` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pid D:\phpStudy\WWW\moka\Runtime\Cache\Admin\394b095ea5cbaa5051fbcfe2ce85492e.php 第 104 行.
+NOTIC: [8] Undefined variable: pid D:\phpStudy\WWW\moka\Runtime\Cache\Admin\394b095ea5cbaa5051fbcfe2ce85492e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:25+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/cardList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/cardList%' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=321 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'App管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT mk_member.nickname,mk_style.name as s_name,mk_card.id,mk_card.pic_json,mk_card.status,mk_card.create_time FROM `mk_card` INNER JOIN mk_member ON mk_card.uid = mk_member.uid INNER JOIN mk_style ON mk_card.s_id = mk_style.id  WHERE ( 1 )  [ RunTime:0.0020s ]
+SQL: SELECT count(id) as c FROM `mk_card` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-03T13:51:34+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/index%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=324 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'App管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:36+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/cardList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/cardList%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=321 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'App管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT mk_member.nickname,mk_style.name as s_name,mk_card.id,mk_card.pic_json,mk_card.status,mk_card.create_time FROM `mk_card` INNER JOIN mk_member ON mk_card.uid = mk_member.uid INNER JOIN mk_style ON mk_card.s_id = mk_style.id  WHERE ( 1 )  [ RunTime:0.0010s ]
+SQL: SELECT count(id) as c FROM `mk_card` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T13:51:37+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/index%' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=324 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'App管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-03T14:26:00+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_config` [ RunTime:0.0040s ]
+SQL: SELECT `type`,`name`,`value` FROM `mk_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/index%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=324 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T14:26:04+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/cardList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/cardList%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=321 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_card` [ RunTime:0.0040s ]
+SQL: SELECT mk_member.nickname,mk_style.name as s_name,mk_card.id,mk_card.pic_json,mk_card.status,mk_card.create_time FROM `mk_card` INNER JOIN mk_member ON mk_card.uid = mk_member.uid INNER JOIN mk_style ON mk_card.s_id = mk_style.id  WHERE ( 1 )  [ RunTime:0.0010s ]
+SQL: SELECT count(id) as c FROM `mk_card` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T14:26:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/index%' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=324 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T14:26:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/index%' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=324 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T14:26:39+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/index%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=324 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-03T14:27:12+08:00 ] 127.0.0.1 /index.php?s=/Admin/Moka/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\MokaController::index() should be compatible with Admin\Controller\AdminController::index($model_name = NULL, $display = true) D:\phpStudy\WWW\moka\Application\Admin\Controller\MokaController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `mk_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mk_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `mk_menu` WHERE ( url like '%Moka/index%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=324 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title` FROM `mk_menu` WHERE ( id=137 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `group` FROM `mk_menu` WHERE ( pid = 137 ) ORDER BY `sort` ASC  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`url` FROM `mk_menu` WHERE `pid` = 137 AND `hide` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '热搜管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = 'SEO管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '广告管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '友联管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `mk_menu` WHERE `group` = '模卡管理' AND `pid` = 137 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mk_style` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mk_style` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pic_num`,`status`,`create_time` FROM `mk_style` WHERE `status` >= 0 ORDER BY `id` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,98 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>用户列表</h2>
+    </div>
+
+    <div class="cf">
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft">
+                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入活动名称">
+                <a class="sch-btn" href="javascript:;" id="search" url="{:U('drawUser')}"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+                <tr>
+                    <th class="row-selected">
+                        <input class="checkbox check-all" type="checkbox">
+                    </th>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>手机号</th>
+                    <th>抽奖次数</th>
+                    <th>今日抽奖次数</th>
+                    <th>今日剩余次数</th>
+                    <th>类型</th>
+                    <th>管理</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.username}</td>
+                        <td>{$vo.mobile}</td>
+                        <td>{$vo.raffle_count}</td>
+                        <td>{$vo.raffle_num}</td>
+                        <td>{$vo.surplus_num}</td>
+                        <td>{$vo['is_frist'] ? '新用户' : '老用户'}</td>
+                        <td>
+                            <a href="{:U('changeField',array('id'=>$vo['id'],'model'=>'ActivityDrawUser' ,'value'=>abs($vo['status']-1)))}" class="ajax-get"><eq name="vo.status" value="1">禁用<else/>启用</eq></a>
+                        </td>
+                        <td>
+                            <a title="编辑" href="{:U('drawUserEdit',array('id'=>$vo['id']))}">编辑</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('drawUserDel',array('id'=>$vo['id']))}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="12" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('drawUser')}");
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            //搜索功能
+            $("#search").click(function () {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function (e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+        });
+    </script>
+</block>

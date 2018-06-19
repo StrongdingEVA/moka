@@ -1,0 +1,213 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            热推列表     
+        </h2>
+    </div>
+    <div class="cf">
+        <div class="fl">
+            <div class="btn-group"> 
+                <input type="button"  class="btn _btn_addapp" value="添加热推">             
+            </div>
+        </div>
+        <div class="search-form fr cf">
+            <div class="btn-group">   
+                <form method="post" action="{:U('NewsPush/index')}">
+                    <span style="margin-left: 20px;">发布时间：</span>
+                    <input type="text" name="rt" title="发布时间" class="ipt5 _seach_rt" value="{$rt}"  > 
+                    <span style="margin-left: 20px;">名称：</span>
+                    <input type="text" name="title" title="标题" class="ipt5" value="{$title}">               
+                    <input type="submit" class="submit btn5" value="查  询">     
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table>
+
+            <thead>
+                <tr class="nbg">                  
+                    <th>编号</th>                   
+                    <th>标题</th>                  
+                    <th>排序</th>   
+                    <th width='140'>发布时间</th>
+                    <th width='80'>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+                <tr>                  
+                    <td>{$vo.id}</td>
+                    <td>{$vo.title}</td>   
+                    <td title="点击修改" class="_edit_order" style="cursor: pointer">
+                        <span class="_view_txt">{$vo.listorder}</span>
+                        <span class="_edit_order_txt" style="display:none">
+                            <input type="text" name="name" data-id="{$vo.id}" title="排序" value="{$vo.listorder}"  style="width: 30px">
+                        </span>
+                    </td> 
+                    <td title="点击修改" class="_edit_rt" style="cursor: pointer">
+                        <span class="_view_txt"><if condition="$vo.release_time gt 0">{$vo.release_time|date='Y-m-d H:i',###}</if></span>
+                        <span class="_edit_rt_txt" style="display:none">
+                            <input type="text" name="release_time" class='_datetimepicker' data-id="{$vo.id}" title="发布时间" value="<if condition='$vo.release_time gt 0'>{$vo.release_time|date='Y-m-d H:i',###}</if>"  style="width: 130px">
+                        </span>
+                    </td> 
+                     <td>                      
+                       <a href="{:U('NewsPush/delete',array('id'=>$vo['id']))}" class=".delete_btn">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+    <!-- 分页 -->   
+    <div class="page">
+        {$page}
+    </div>   
+</div>
+<div class="_show_zt_win" style="display: none">
+    <div style='padding: 10px;' class="_show_zt_win_content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">   
+            <tr class="_top_search">
+                <td>
+                    <label>资讯标题：</label><input type="text" name="search" class="ipt4" value=''>
+                    <input type="button"  class="submit btn5 _btn_search_get" value="查找" style="display:inline-block" />
+                    <input type="button"  class="submit btn5 _btn_cx_add" value="添加" data-id="1" style="display:inline-block; " />
+                </td>
+            </tr>
+            <tr class="_bottom_btn">               
+                <td style="padding-top:30px; text-align: right;">                      
+                </td>
+            </tr>
+        </table>       
+    </div>
+</div>
+<link rel='stylesheet' type="text/css" href="__STATIC__/datetimepicker/jquery.datetimepicker.css" />
+    <script type="text/javascript" src="__STATIC__/datetimepicker/jquery.datetimepicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('._datetimepicker').datetimepicker({format:"Y-m-d H:m" });
+             $('._seach_rt').datetimepicker({format:"Y-m-d",timepicker:false });            
+        });
+    </script>
+<script type="text/javascript">
+    $(function () {        
+
+        $('._btn_addapp').click(function () {          
+            layer.open({
+                type: 1,
+                title: '添加热推',
+                skin: 'layui-layer-rim', //加上边框
+                area: ['550px', '300px'], //宽高              
+                content: $('._show_zt_win').html()
+            });
+        });
+        
+        $('body').delegate('._btn_search_get', 'click', function () {
+            var search = $(this).parent().find('input[name=search]').val();
+            get_app_list(search);
+        });
+
+        $('body').delegate('._btn_cx_add', 'click', function () {
+            var sid = $(this).attr('data-id');
+            var cid = $('.layui-layer input[name=appid]:checked').val();
+            appadd(cid, sid);
+        });
+        
+        $('._edit_order').click(function () {
+            $(this).find('._view_txt').hide();
+            $(this).find('._edit_order_txt').show();
+            $(this).find('._edit_order_txt input').focus();
+        });
+
+        $('._edit_order_txt').focusout(function () {
+            $(this).parent().find('._view_txt').show();
+            $(this).parent().find('._edit_order_txt').hide();
+        });
+
+        $('._edit_order_txt input').keyup(function () {
+            var obj = this;
+            var id = $(this).attr('data-id');
+            var order = $(this).val();
+            var url = cleara(SELF) + "&a=ajax_set_order&id=" + id + "&order=" + order;
+            $.get(url, function (data) {
+                if (data.status) {
+                    $(obj).parents('._edit_order').find('._view_txt').text(order);
+                }
+            }, 'json');
+        });
+        
+         $('._edit_rt').click(function () {
+            $(this).find('._view_txt').hide();
+            $(this).find('._edit_rt_txt').show();
+            $(this).find('._edit_rt_txt input').focus();
+        });
+
+        $('._edit_rt_txt').focusout(function () {
+            $(this).parent().find('._view_txt').show();
+            $(this).parent().find('._edit_rt_txt').hide();
+        });
+
+        $('._edit_rt_txt input').focusout(function () {
+            var obj = this;
+            var id = $(this).attr('data-id');            
+            var rt = $(this).val();
+            var url = cleara(SELF) + "&a=ajax_set_rt";
+            $.post(url,{id:id,rt:rt}, function (data) {
+                if (data.status) {
+                    $(obj).parents('._edit_rt').find('._view_txt').text(rt);
+                }
+            }, 'json');
+        });
+    });
+
+    function foreverdel(obj) {
+        layer.confirm('您确定删除？', {
+            btn: ['确定', '取消'] //按钮
+        }, function () {
+            location.href = $(obj).attr('data-href');
+        });
+    }
+
+    function appadd(cid, sid) {
+        if (typeof (cid) == "undefined" || cid == '') {
+            layer.msg('请输入资讯');
+            return;
+        }
+
+        var url = cleara(SELF) + "&a=newspushadd";
+        $.post(url, {cid: cid, sid: sid}, function (data) {
+            layer.msg(data.info);
+            if (data.status) {
+                location.reload();
+            }
+        });
+    }
+
+
+
+    function get_app_list(search) {
+        if ($.trim(search).length <= 0) {
+            layer.msg('请输入资讯标题关键字查找');
+            return;
+        }
+        var url = cleara(SELF) + "&a=getnewslist&search=" + encodeURIComponent(search);
+        $.get(url, function (data) {
+            if (data.length) {
+                var tr = '';
+                for (var i = 0; i < data.length; ++i) {
+                    tr += '<tr class="_app_list">';
+                    tr += '   <td style="line-height: 25px"><label><input name="appid" type="radio" value="' + data[i]['id'] + '" />&nbsp;&nbsp;[' +data[i]['wp_name']+']&nbsp;&nbsp;'+ data[i]['title'] + '</label> </td>';
+                    tr += '</tr>';
+                }
+            }
+            $('.layui-layer ._app_list').remove();
+            $('.layui-layer ._bottom_btn').before(tr);
+        }, 'json');
+    }
+
+</script>   
+</block>

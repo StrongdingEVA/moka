@@ -1,0 +1,3 @@
+<?php
+//000000003600a:18:{s:2:"id";s:1:"1";s:3:"uid";s:1:"1";s:6:"openid";s:36:"D2B26AA2-2499-B337-B109-96AF2FD68FC6";s:6:"gentle";s:1:"1";s:10:"profession";s:0:"";s:7:"country";s:1:"0";s:8:"province";s:1:"0";s:4:"city";s:1:"0";s:4:"area";s:1:"0";s:6:"school";s:12:"泉州师范";s:7:"company";s:15:"不知道公司";s:4:"star";s:9:"白羊座";s:6:"height";s:3:"173";s:6:"weight";s:2:"60";s:9:"chestline";s:2:"21";s:9:"waistline";s:3:"152";s:7:"hipline";s:4:"5151";s:11:"create_time";s:1:"0";}
+?>

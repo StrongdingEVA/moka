@@ -1,0 +1,7 @@
+[ 2018-04-16T14:21:29+08:00 ] 127.0.0.1 /api.php/Moka/saveUinfo
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `uid` = 1' at line 1
+ [ SQL语句 ] : UPDATE `mk_member_info` SET  WHERE `uid` = 1
+
+[ 2018-04-16T14:55:12+08:00 ] 127.0.0.1 /api.php
+ERR: 无法加载控制器:Index
+

@@ -1,0 +1,101 @@
+<extend name="Public/base" />
+<block name="body">
+    <div class="main-title cf">
+        <h2>
+            修改类型
+        </h2>
+    </div>
+    <!-- 标签页导航 -->
+    <div class="tab-wrap">
+        <div class="tab-content">
+            <form method='post' id="form1" class='form-horizontal' name="form1" action="{:US('Admin/VideoCategory/update')}"  enctype="multipart/form-data">
+                <div class="form-item cf">
+                    <label class="item-label">分类名称<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="title" value="{$vicate.title}"><span class="must">*</span>
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">图标<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <notempty name="vicate.icon">
+                            <img src="{$vicate.icon}" name="icon" width="60" height="60" />
+                            <a href="javascript:return false;" onclick="foreverdelthumb(this);" title="你确定要删除吗？">删除</a>
+                            <input type="hidden" class="thumb" name="icon" value="{$vicate.icon}" />
+                            <else/>
+                            <input type="file" class="thumb" name="icon" />
+                        </notempty>
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">排序<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="sort"  value="{$vicate.sort}">
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">国籍<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <select name="countries">
+                            <option value="" {$select}>请选择国籍</option>
+                            <volist name="countries" id="vo">
+                                <?php
+                                if($vo['id']==$vicate['country']){
+                                    $select = 'selected="selected"';
+                                }else{
+                                    $select = '';
+                                }
+                            ?>
+                                <option value="{$vo.id}" {$select}>{$vo.title}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">分类<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <select name="types">
+                            <volist name="types" id="vo">
+                                <?php
+                                if($vo['id']==$vicate['type']){
+                                    $select = 'selected="selected"';
+                                }else{
+                                    $select = '';
+                                }
+                            ?>
+                                <option value="{$vo.id}" {$select}>{$vo.title}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">状态<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <select name="status" >
+                            <option <eq name="vicate.status" value="1" >selected</eq> value="1">启用</option>
+                            <option <eq name="vicate.status" value="0" >selected</eq> value="0">禁用</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form_b">
+                    <input type="hidden" name="id" value="{$vicate.id}">
+                    <input type="submit" class="submit btn" id="submit" value="提 交">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+
+        function foreverdelthumb(cur) {
+            var nodename = $(cur).prev().attr('name');
+            //插入新节点
+            var html = '<dd>\r\n<input type="file" class="thumb" name="' + nodename + '" />\r\n</dd>';
+            $(cur).parent().after(html);
+            //移除当前节点
+            $(cur).parent().remove();
+
+        }
+    </script>
+</block>
+

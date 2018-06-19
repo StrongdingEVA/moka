@@ -1,0 +1,92 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!-- 标题 -->
+    <div class="main-title">
+        <h2>
+            影视类型管理
+        </h2>
+    </div>
+    <div class="cf">
+        <div class="btn-group">
+            <a href="{:US('VideoCategory/add')}" class="btn" >添加</a>
+        </div>
+    </div>
+    <!-- 数据表格 -->
+    <div class="data-table">
+        <table>
+            <thead>
+                <tr class="">   
+                    <th class="row-selected">
+                        <input class="checkbox check-all" type="checkbox">
+                    </th>
+                    <th>编号</th>
+                    <th>类型名称</th>
+                    <th>ICON</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>  
+            </thead>
+            <tbody>                
+            <volist name="list" id="vo">
+                <tr>
+                    <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.title}</a></td>
+                    <td id='img_icon'><img src="{$vo.icon|thumb=###,100,100}" name="thumb" width="60" height="60" /> </td>
+                    <td>
+                        <if condition="($vo['status'] == 1)">
+                            启用&nbsp;&nbsp;
+                            <else />
+                            禁用
+                        </if>
+                    </td>
+                    <td >
+                        <if condition="($vo['status'] == 0)">
+                            <a href="{:U('VideoCategory/setSts',array('id'=>$vo['id'],'status'=>1))}">启用</a>&nbsp;&nbsp;
+                            <else />
+                            <a href="{:U('VideoCategory/setSts',array('id'=>$vo['id'],'status'=>0))}">禁用</a>&nbsp;&nbsp;
+                        </if>
+                        <a href="{:U('VideoCategory/edit',array('id'=>$vo['id']))}">修改</a>&nbsp;&nbsp;
+		                <a href="{:U('VideoCategory/foreverdelete',array('id'=>$vo['id']))}" onclick="foreverdel('{$vo.id}');return false;">删除</a>&nbsp;&nbsp;
+		                <!--a href="javascript:;" class="_put_special" data-id="{$vo.id}" >推送</a-->
+                	</td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="_show_zt_win" style="display: none">
+    <div style='padding: 10px;' class="_show_zt_win_content">
+        <table>
+            <tr class="_top_search">
+                <td>
+                    <label>专题名称：</label><input type="text" name="search" class="ipt4" value=''>
+                    <input type="button"  class="submit btn5 _btn_search_get" value="查找" style="display:inline-block" />
+                    <input type="button"  class="submit btn5 _btn_cx_add" value="推送"  style="display:inline-block; " />
+                </td>
+            </tr>
+        </table>
+        <div style='height: 200px; overflow-y: auto; overflow-x: hidden'>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+                <tr class="_bottom_btn">               
+                    <td style="padding-top:30px; text-align: right;">                      
+                    </td>
+                </tr>
+            </table>  
+        </div>
+    </div>
+</div>
+<link rel='stylesheet' type="text/css" href="__STATIC__/datetimepicker/jquery.datetimepicker.css" />
+<script type="text/javascript" src="__STATIC__/datetimepicker/jquery.datetimepicker.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('._datetimepicker').datetimepicker({format: "Y-m-d H:m"});
+        $('._seach_rt').datetimepicker({format: "Y-m-d", timepicker: false});
+    });
+</script>
+<script>
+
+</script>
+</block>

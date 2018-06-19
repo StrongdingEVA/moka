@@ -1,0 +1,21 @@
+[ 2018-06-13T16:05:22+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/add
+ERR: 模板不存在:./Application/Admin/View/Moka/edit.html
+
+[ 2018-06-13T16:06:12+08:00 ] 127.0.0.1 /index.php?s=/admin/Moka/add
+ERR: 模板不存在:./Application/Admin/View/Moka/edit.html
+
+[ 2018-06-13T16:06:29+08:00 ] 127.0.0.1 /index.php?s=/admin/moka/add
+ERR: 模板不存在:./Application/Admin/View/Moka/edit.html
+
+[ 2018-06-13T16:08:27+08:00 ] 127.0.0.1 /index.php?s=/admin/Moka/edit
+ERR: 1146:Table 'moka.mk_moka' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mk_moka`
+ERR: 1146:Table 'moka.mk_moka' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mk_moka`
+
+[ 2018-06-13T16:09:02+08:00 ] 127.0.0.1 /index.php?s=/admin/Moka/editArticle
+ERR: 非法操作:editarticle
+
+[ 2018-06-13T16:10:11+08:00 ] 127.0.0.1 /index.php?s=/admin/Moka/editArticle
+ERR: 非法操作:editarticle
+

@@ -1,0 +1,60 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}广告位</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">广告位名称<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">广告位英文名<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="status" value="1" <neq name="info.status" value="0">checked="checked"</neq>>启用 &nbsp; &nbsp; 
+                <input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq>>禁用
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">类型<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="type" value="1" <if condition="!$info['type'] or $info['type'] eq 1">checked="checked"</if>>单图&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="type" value="2" <eq name="info.type" value="2">checked="checked"</eq>>多图&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="type" value="3" <eq name="info.type" value="3">checked="checked"</eq>>文字&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="type" value="4" <eq name="info.type" value="4">checked="checked"</eq>>代码&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">模块<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="radio" name="class" value="0" <if condition="!$info['class']">checked="checked"</if>>全局&nbsp;&nbsp;&nbsp;&nbsp;               
+                <input type="radio" name="class" value="1" <eq name="info.class" value="1">checked="checked"</eq>>pc&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="class" value="2" <eq name="info.class" value="2">checked="checked"</eq>>h5&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="class" value="3" <eq name="info.class" value="3">checked="checked"</eq>>APP小程序&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="class" value="4" <eq name="info.class" value="4">checked="checked"</eq>>APP轻应用&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="class" value="5" <eq name="info.class" value="5">checked="checked"</eq>>APP公众号&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('pos')}");
+    </script>
+</block>

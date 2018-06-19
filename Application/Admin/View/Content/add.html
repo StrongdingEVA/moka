@@ -1,0 +1,77 @@
+<extend name="Public/base" />
+<block name="body">   	
+    <div class="main-title cf">
+        <h2>
+            编辑影视
+        </h2>
+    </div>
+    <!-- 标签页导航 -->
+    <div class="tab-wrap">        
+        <div class="tab-content">
+            <form method='post' id="form1" class='form-horizontal' name="form1" action="{:US('Admin/Content/add')}"  enctype="multipart/form-data">
+                <div class="form-item cf">
+                    <label class="item-label">影视名称<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="title" value="{$vo.title}"><span class="must">*</span>
+                    </div>
+                </div> 
+                <div class="form-item cf">
+                    <label class="item-label">类型<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <select name="catid" class="_one_cateid">
+                            <option value ="" <eq name="vo.id" value="">selected</eq>>请选择</option>
+                            <volist name="catlist" id="sub">
+                                <option value ="{$sub.id}" <eq name="vo.catid" value="$sub['id']">selected</eq>>{$sub.title}</option>
+                            </volist>
+                        </select>                       
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">小图标<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <notempty name="vo.thumb">
+                            <img src="{$vo.thumb}" name="thumb" width="60" height="60" />
+                            <a href="javascript:return false;" onclick="foreverdelthumb(this);" title="你确定要删除吗？">删除</a>
+                            <input type="hidden" class="thumb" name="thumb" value="{$vo.thumb}" />
+                            <else/>
+                            <input type="file" class="thumb" name="thumb" />
+                        </notempty>                          
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">订阅量<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <input type="text" class="text input-large" name="follow_count"  value="{$vo.follow_num}">
+                    </div>
+                </div>
+                <div class="form-item cf">
+                    <label class="item-label">状态<span class="check-tips"></span></label>
+                    <div class="controls">
+                        <select name="status" >                            
+                            <option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+                            <option <eq name="vo.status" value="2" >selected</eq> value="2">禁用</option>          
+                        </select>
+                    </div>
+                </div>
+                <div class="form_b">
+                    <input type="hidden" name="id" value="{$vo.id}">
+                    <input type="submit" class="submit btn" id="submit" value="提 交">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">     
+       
+
+        function foreverdelthumb(cur) {
+            var nodename = $(cur).prev().attr('name');
+            //插入新节点
+            var html = '<dd>\r\n<input type="file" class="thumb" name="' + nodename + '" />\r\n</dd>';
+            $(cur).parent().after(html);
+            //移除当前节点
+            $(cur).parent().remove();
+
+        }
+    </script>
+</block>
+
